@@ -1,0 +1,3 @@
+{
+  "components/themevale/sidebar/advertisement-image": "{{#if theme_settings.themevale_banner-ads-1}}\r\n\r\n{{/if}}\r\n{{#if theme_settings.themevale_banner-ads-2}}\r\n\r\n{{/if}}\r\n"
+}

@@ -1,0 +1,96 @@
+---
+carousel: {{theme_settings.homepage_show_carousel}}
+---
+<!-- ---
+products:
+new:
+limit: {{theme_settings.homepage_new_products_count}}
+featured:
+limit: {{theme_settings.homepage_featured_products_count}}
+top_sellers:
+limit: {{theme_settings.homepage_top_products_count}}
+carousel: {{theme_settings.homepage_show_carousel}}
+blog:
+recent_posts:
+limit: {{theme_settings.homepage_blog_posts_count}}
+summary: {{theme_settings.homepage_blog_description_limit}}
+--- -->
+
+
+
+
+{{#partial "hero"}}
+{{#if carousel}}
+{{> components/carousel arrows=theme_settings.homepage_show_carousel_arrows
+dots=theme_settings.homepage_show_carousel_dots}}
+{{/if}}
+{{{snippet 'home_content'}}}
+{{{region name="below_carousel"}}}
+{{/partial}}
+
+{{#partial "page"}}
+{{#each shipping_messages}}
+{{> components/common/alert-info message}}
+{{/each}}
+<div class="main full">
+    <div class="main-shop-banner">
+        <div class="container">
+            <h2 class="page-heading">Your Discounted Motorcycle Gear<br> Headquarters!</h2>
+            <p>Motorcycle Helmets & Motorcycle Apparel</p>
+            <a class="button button--primary" href="/helmets/">Shop now</a>
+        </div>
+    </div>
+    <div class="search-by-vehicle padding-bottom-50" id="search-by-vehicle">
+        <div class="container">
+            <h2 class="page-heading">Shop by vehicle</h2>
+            <div id="ymm-container"></div>
+        </div>
+    </div>
+    <div class="dmg-categories">
+        <div class="container">
+            <div class="dmg-categories__inner">
+                <a href="/helmets/" class="dmg-category">
+                    <h3>Helmets</h3>
+                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                        data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/helmets-category.jpg"
+                        alt="helmets" />
+                </a>
+                <a href="/casual-riding-shirts-light-jackets/" class="dmg-category">
+                    <h3>Jackets</h3>
+                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                        data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/jackets.jpg"
+                        alt="jackets" />
+                </a>
+                <a href="/textile-pants/" class="dmg-category">
+                    <h3>Pants</h3>
+                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                        data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/pants.jpg"
+                        alt="pants" />
+                </a>
+                <a href="/boots/" class="dmg-category">
+                    <h3>Boots</h3>
+                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                        data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/boots.jpg"
+                        alt="boots" />
+                </a>
+                <a href="/gloves/" class="dmg-category">
+                    <h3>Gloves</h3>
+                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                        data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/gloves.jpg"
+                        alt="gloves" />
+                </a>
+                <a href="/luggage/" class="dmg-category">
+                    <h3>Luggage</h3>
+                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                        data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/luggage.jpg"
+                        alt="luggage" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {{> components/themevale/category/brands-image-carousel}}
+
+</div>
+{{/partial}}
+{{> layout/base}}
