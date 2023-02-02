@@ -416,7 +416,7 @@
     display: block;
     color: stencilColor('card-figcaption-button-color');
     border-color: stencilColor('card-figcaption-button-border');
-    background-color: stencilColor('card-figcaption-button-background');
+    background-color: transparent;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.05);
 
     &:hover,

@@ -37,6 +37,8 @@
     position: relative;
     margin: auto;
     width: 100%;
+    background: #fff;
+    border: 1px solid #eee;
     > a {
         top: 0;
         left: 0;
@@ -64,7 +66,6 @@
     margin: 0;
     font-size: 0;
     text-align: center;
-
     .slick-arrow {
         fill: stencilColor("icon-color");
     }
@@ -88,6 +89,8 @@
 .productView-thumbnail-link {
     display: block;
     position: relative;
+    background: #fff;
+    border: 1px solid #eee;
     @include lazy-loaded-padding('productview_thumb_size');
     img {
         @include lazy-loaded-img;

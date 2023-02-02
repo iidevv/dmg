@@ -706,10 +706,10 @@
         margin: 0 0 13px 0;
         font-weight: 700;
         font-family: $fontFamily-sans;
-        color: stencilColor('card-title-color');
+        color: #000;
 
         @include breakpoint("small") {
-            font-size: 18px;
+            font-size: 24px;
         }
     }
 
@@ -1238,9 +1238,10 @@
         .productView-description {
             display: inline-block;
             vertical-align: top;
-            width: 60%;
             font-size: 12px;
-
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 30px 15px;
             .tabs {
                 display: block;
             }
