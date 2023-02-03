@@ -149,6 +149,9 @@
     }
 
     .card-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
         margin-top: 22px;
     }
 
@@ -231,7 +234,7 @@
         margin-right: 5px;
         vertical-align: top;
         display: inline-block;
-
+        font-weight: normal;
         span {
             line-height: inherit;
         }

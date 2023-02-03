@@ -290,8 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
           behavior: "smooth",
           block: "start",
         });
-      } 
-
+      }
     });
   }
 });

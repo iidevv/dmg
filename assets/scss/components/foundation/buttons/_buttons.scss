@@ -99,15 +99,15 @@
 .button--secondary {
     min-width: 220px;
     color: stencilColor("button--secondary-color");
-    border: 1px solid stencilColor("button--secondary-borderColor");
-    background-color: stencilColor("button--secondary-backgroundColor");
+    border: 1px solid #333;
+    background-color: #333;
     svg {
         fill: stencilColor("button--secondary-color");
     }
     &:hover, &:active, &:focus {
         color: stencilColor("button--secondary-color");
-        border: 1px solid stencilColor("button--secondary-borderColor");
-        background-color: stencilColor("button--secondary-backgroundColor");
+        border: 1px solid #ef4838;
+        background-color: #ef4838;
         svg {
             fill: stencilColor("button--secondary-color");
         }
@@ -115,8 +115,8 @@
     @media (min-width: 1025px) {
         &:hover, &:focus, &:active {
             color: stencilColor("button--secondary-colorHover");
-            border: 1px solid stencilColor("button--secondary-borderColorHover");
-            background-color: stencilColor("button--secondary-backgroundColorHover");
+            border: 1px solid #ef4838;
+            background-color: #ef4838;
             svg {
                 fill: stencilColor("button--secondary-colorHover");
             }

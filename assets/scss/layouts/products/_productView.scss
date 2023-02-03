@@ -282,10 +282,9 @@
         width: 100%;
         display: table;
 
-        .image-contact,
         .content-contact {
-            display: table-cell;
-            vertical-align: middle;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .image-contact {
@@ -298,10 +297,9 @@
         }
 
         .content-contact {
-            padding-left: 15px;
 
             .text {
-                margin-bottom: 8px;
+                margin-right: 15px;
                 text-transform: capitalize;
             }
 

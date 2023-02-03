@@ -147,6 +147,9 @@
     padding: 12px 20px 12px 20px;
     text-transform: uppercase;
     border-bottom: 1px solid #e2e4e8;
+    @media(max-width: 1023px) {
+        margin-top: 60px;
+    }
 }
 
 .all-categories-list {
@@ -222,6 +225,7 @@
             padding-right: 0;
             line-height: 30px;
             a {
+                line-height: 1;
                 margin: 0;
                 width: auto;
                 border: none;

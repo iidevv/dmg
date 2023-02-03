@@ -43,7 +43,7 @@ products:
         {{#unless theme_settings.hide_category_page_heading }}
             <h1 class="page-heading">{{category.name}}</h1>
         {{/unless}}
-        {{{category.description}}}
+        
         {{{snippet 'categories'}}}
         {{{region name="category_below_header"}}}
     </div>
@@ -90,9 +90,16 @@ products:
         </main>
     </div>
     <div class="container">{{{region name="category_below_content"}}}</div>
+
 </div>
 
 {{> components/themevale/category/brands-image-carousel}}
+
+<div class="category-description">
+    <div class="container">
+        {{{category.description}}}
+    </div>
+</div>
 
 {{/partial}}
 {{> layout/base}}

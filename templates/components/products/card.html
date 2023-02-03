@@ -87,13 +87,7 @@
                     {{> components/common/login-for-pricing}}
                 {{/or}}
             </div>
-            {{#if show_wishlist}}
-                <div class="card-wishlist">
-                    <a href="/wishlist.php?action=add&product_id={{id}}" class="card-button-wishlist" title="{{lang 'account.wishlists.add_item'}}">
-                        <svg class="icon"><use xlink:href="#icon-heart"/></svg>
-                    </a>
-                </div>
-            {{/if}}
+            
         </div>
         <div class="card-figcaption">
             {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
