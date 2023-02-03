@@ -2,6 +2,8 @@
 products:
     new:
         limit: 8
+    featured:
+        limit: 8
 
 carousel: {{theme_settings.homepage_show_carousel}}
 ---
@@ -40,14 +42,14 @@ dots=theme_settings.homepage_show_carousel_dots}}
             <div id="ymm-container"></div>
         </div>
     </div>
+    {{#if products.new}}
     <div class="dmg-products">
         <div class="container">
             <h2 class="page-heading">New Products</h2>
-            {{#if products.new}}
                 {{> components/products/carousel-new products=products.new arrows=true}}
-            {{/if}}
         </div>
     </div>
+    {{/if}}
     <div class="dmg-categories">
         <div class="container">
             <div class="dmg-categories__inner">
@@ -90,7 +92,19 @@ dots=theme_settings.homepage_show_carousel_dots}}
             </div>
         </div>
     </div>
-
+    {{#if products.featured}}
+    <div class="dmg-products dmg-products--featured">
+        <div class="container">
+            <h2 class="page-heading">Featured Products</h2>
+            <div class="dmg-products__inner">
+                {{> components/products/carousel products=products.featured arrows=true}}
+            </div>
+        </div>
+        <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/featured.jpeg?t=1675409372&_gl=1*13jvt6x*_ga*MTg4ODgxODc0Ni4xNjc0Njk3NDIz*_ga_WS2VZYPC6G*MTY3NTQwODI3Ny4yMi4xLjE2NzU0MDkzNzUuMzAuMC4w"
+                alt="luggage" />
+    </div>
+    {{/if}}
     {{> components/themevale/category/brands-image-carousel}}
 
 </div>
