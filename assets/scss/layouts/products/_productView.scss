@@ -493,7 +493,7 @@
                 color: inherit;
                 display: block;
                 padding: 10px;
-                border-radius: 3px;
+                border-radius: 0;
                 border: 1px solid #e2e4e8;
                 min-width: 70px;
 
@@ -610,7 +610,7 @@
             color: inherit;
             display: block;
             padding: 10px;
-            border-radius: 3px;
+            border-radius: 0;
             border: 1px solid #e2e4e8;
             min-width: 70px;
 
@@ -1064,7 +1064,7 @@
 
     .block-time {
         padding: 9px 6px;
-        border-radius: 3px;
+        border-radius: 0;
         background-color: stencilColor('product_countdown-background');
         margin-right: 5px;
         text-align: center;
@@ -1572,7 +1572,7 @@
         }
 
         img {
-            border-radius: 3px;
+            border-radius: 0;
         }
     }
 
@@ -1582,7 +1582,7 @@
         padding: 10px 15px;
         margin-bottom: 2.25rem;
         background-color: #f7f7f7;
-        border-radius: 3px;
+        border-radius: 0;
         font-style: italic;
 
         q {
@@ -1858,7 +1858,7 @@
                 }
 
                 &.thumb-video {
-                    border-radius: 3px;
+                    border-radius: 0;
                     overflow: hidden;
 
                     &:before {
@@ -1868,7 +1868,7 @@
                         bottom: 0;
                         content: "";
                         z-index: 2;
-                        border-radius: 3px;
+                        border-radius: 0;
                         position: absolute;
                         background-color: rgba(255, 255, 255, 0.5);
                         border: 3px solid stencilColor('card-title-color');

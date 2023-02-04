@@ -10,7 +10,7 @@
             height: 35px;
             padding: 0 5px;
             line-height: 35px;
-            border-radius: 3px;
+            border-radius: 0;
             transition: all 0.3s ease;
             fill: stencilColor('color-slick-arrow');
             border: 1px solid stencilColor('color-slick-borderarrow');
@@ -732,7 +732,7 @@
             font-size: $body-fontSize;
             color: stencilColor('themevale_category-card-color');
             background-color: #ffffff;
-            border-radius: 3px;
+            border-radius: 0;
             .category-figure {
                 margin: 0;
                 display: block;
@@ -1123,7 +1123,7 @@
             text-align: left;
             position: relative;
             overflow: hidden;
-            border-radius: 3px;
+            border-radius: 0;
             font-size: $body-fontSize;
             color: stencilColor('themevale_banner-marketing-color');
             .banner-figure {
@@ -1431,7 +1431,7 @@
         }
 
         .themevale_featuredCategory {
-            border-radius: 3px;
+            border-radius: 0;
             overflow: hidden;
             background-color: #ffffff;
             box-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -1505,7 +1505,7 @@
                 box-shadow: none;
                 .image {
                     max-width: 170px;
-                    border-radius: 3px;
+                    border-radius: 0;
                 }
                 .content {
                     padding: 0;
@@ -1731,7 +1731,7 @@
             @media (min-width: 1025px) {
                 .video-image {
                     overflow: hidden;
-                    border-radius: 3px;
+                    border-radius: 0;
                     .icon-video {
                         max-width: 100px;
                     }
@@ -2279,7 +2279,7 @@
                 display: table;
                 margin-bottom: 0;
                 padding: 15px;
-                border-radius: 3px;
+                border-radius: 0;
                 background-color: #ffffff;
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
                 .card-figure {

@@ -1,9 +1,11 @@
 <div class="themevale_productDescription">
     <div class="productView-description" {{#if schema}} itemprop="description" {{/if}}>
         <ul class="tabs tabs-custom-2" data-tab>
+            {{#if product.description}}
             <li class="tab is-active">
                 <a class="tab-title" href="#tab-description">{{lang 'products.description'}}</a>
             </li>
+            {{/if}}
             {{#if product.warranty}}
             <li class="tab">
                 <a class="tab-title" href="#tab-warranty">{{lang 'products.warranty'}}</a>
@@ -11,12 +13,6 @@
             {{/if}}
             <li class="tab">
                 <a href="#tab-shipping" class="tab-title">{{theme_settings.products_tab-title-1}}</a>
-            </li>
-            <li class="tab">
-                <a href="#tab-custom" class="tab-title">{{theme_settings.products_tab-title-2}}</a>
-            </li>
-            <li class="tab">
-                <a href="#tab-faq" class="tab-title">{{theme_settings.products_tab-title-3}}</a>
             </li>
         </ul>
         <div class="tabs-contents">

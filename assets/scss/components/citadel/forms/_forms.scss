@@ -218,6 +218,7 @@
     }
 
     .form-input {
+        border-radius: 0;
         @include breakpoint("large") {
             width: auto;
         }
@@ -255,7 +256,6 @@
 .form-increment {
     margin: 0;
     font-size: 0;
-    border-radius: 3px;
     border: 1px solid #e2e4e8;
     .button {
         margin: 0;

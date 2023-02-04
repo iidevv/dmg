@@ -45,7 +45,7 @@
         display: inline-block;
         vertical-align: middle;
         border: 1px solid #cccfd6;
-        border-radius: 3px;
+        border-radius: 0;
         fill: stencilColor('color-textHeading');
     }
     > .text {
@@ -88,7 +88,6 @@
     }
     .view-as-btn {
         font-size: 0;
-        border-radius: 3px;
         display: inline-block;
         vertical-align: middle;
         border: 1px solid #cccfd6;

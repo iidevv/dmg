@@ -82,7 +82,6 @@
     border: none;
     line-height: 1;
     vertical-align: top;
-    border-radius: 3px;
     svg {
         fill: #323232;
         stroke: #323232;
@@ -110,18 +109,17 @@
             color: #323232;
             background-color: #f7f7f7;
             border: 1px solid #f7f7f7;
-            border-radius: 3px;
         }
     }
     &.pagination-item--previous,
     &.pagination-item--next {
         > a {
             font-weight: 700;
-            border-radius: 3px;
             padding: 12px 15px 11px 15px;
             border: 1px solid #eaeaea;
             background-color: transparent;
             text-transform: uppercase;
+            border-radius: 0;
         }
     }
     @include breakpoint("small") {
@@ -197,7 +195,6 @@
             line-height: 1;
             font-size: 16px;
             font-weight: 700;
-            border-radius: 3px;
             position: relative;
             text-transform: uppercase;
             padding: 10px 30px 8px 30px;

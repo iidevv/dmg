@@ -175,7 +175,7 @@ dl {
     line-height: 1;
     font-size: 12px;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 0;
     position: relative;
     padding: 13px 15px 11px 15px;
     margin-bottom: 0;
@@ -258,7 +258,7 @@ dl {
     color: #383e47;
     font-size: 16px;
     padding: 12px 15px 10px 15px;
-    border-radius: 3px;
+    border-radius: 0;
     line-height: 1;
     font-weight: 700;
     min-width: 120px;
@@ -301,7 +301,7 @@ dl {
 
 .optimizedCheckout-orderSummary {
     margin: 0;
-    border-radius: 3px;
+    border-radius: 0;
     border: 1px solid #e2e4e8;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -452,7 +452,7 @@ dl {
         line-height: 1;
         font-size: 16px;
         text-align: center;
-        border-radius: 3px;
+        border-radius: 0;
         position: relative;
         padding: 12px 5px 10px 5px;
         margin-bottom: 0;
@@ -519,7 +519,7 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(#d14343, 0.6);
     font-size: 12px;
     padding: 10px 15px;
     line-height: 20px;
-    border-radius: 3px;
+    border-radius: 0;
     box-shadow: none;
     color: stencilColor('color-textBase');
     background-color: #ffffff;
@@ -599,7 +599,7 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(#d14343, 0.6);
     border-radius: 0;
     border: 1px solid #ebebeb;
     background-color: #f7f7f7;
-    border-radius: 4px;
+    border-radius: 0;
 
     .form-checklist-checkbox~.form-label {
         font-size: 14px;
@@ -611,14 +611,14 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(#d14343, 0.6);
 .optimizedCheckout-form-checklist-item {
     border-color: #ebebeb;
     background-color: #f7f7f7;
-    border-radius: 4px;
+    border-radius: 0;
 }
 
 .optimizedCheckout-form-checklist-item:hover,
 .optimizedCheckout-form-checklist-item--selected {
     border-color: #ebebeb;
     background-color: #f7f7f7;
-    border-radius: 4px;
+    border-radius: 0;
 }
 
 .optimizedCheckout-form-checklist-checkbox {
@@ -689,7 +689,7 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(#d14343, 0.6);
     color: stencilColor('color-textBase');
 
     &:before {
-        border-radius: 3px;
+        border-radius: 0;
     }
 }
 

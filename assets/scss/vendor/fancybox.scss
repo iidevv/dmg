@@ -588,7 +588,7 @@ body.compensate-for-scrollbar {
 /* Share */
 .fancybox-share {
   background: #f4f4f4;
-  border-radius: 3px;
+  border-radius: 0;
   max-width: 90%;
   padding: 30px;
   text-align: center; }
@@ -605,7 +605,7 @@ body.compensate-for-scrollbar {
 
 .fancybox-share__button {
   border: 0;
-  border-radius: 3px;
+  border-radius: 0;
   display: inline-block;
   font-size: 14px;
   font-weight: 700;

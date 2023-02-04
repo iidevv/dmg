@@ -10,7 +10,6 @@
     appearance: none;
     background-image: $select-backgroundImage;
     background-position: $select-backgroundPosition;
-    border-radius: $select-borderRadius;
     padding: $select-padding;
 
     &:hover {
@@ -52,7 +51,6 @@
 =========================================*/
     .form-input {
         height: auto;
-        border-radius: 3px;
         line-height: 38px;
         padding: 0px 15px;
         min-height: 38px;
@@ -116,7 +114,6 @@
 
     .form-select {
         height: auto;
-        border-radius: 3px;
         line-height: 38px;
         padding: 0 31px 0 15px;
         min-height: 38px;

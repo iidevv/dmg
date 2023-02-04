@@ -287,7 +287,6 @@
         display: block;
         margin: 7px 0 0 0;
         padding: 3px 5px 3px 5px;
-        border-radius: 3px;
         max-width: 40px;
         text-align: center;
 
@@ -454,7 +453,7 @@
     line-height: 1;
     white-space: nowrap;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 0;
     padding: 6px 12px 6px 12px;
     text-transform: capitalize;
     color: stencilColor('card-quickview-color');
@@ -503,7 +502,7 @@
 .card {
     border: none;
     margin-bottom: 30px;
-
+    border-radius: 0;
     @media (min-width: 1025px) {
         &:hover {
 

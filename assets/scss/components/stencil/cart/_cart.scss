@@ -42,7 +42,7 @@ $cart-item-label-offset:                $cart-thumbnail-maxWidth + $cart-item-sp
         display: table-header-group;
         text-align: left;
         background-color: #f7f7f7;
-        border-radius: 3px;
+        border-radius: 0;
     }
 }
 
@@ -792,7 +792,7 @@ a[data-item-edit] {
     outline: none;
     text-align: left;
     position: absolute;
-    border-radius: 3px;
+    border-radius: 0;
     width: remCalc(340px);
     background-color: #ffffff;
     border: 1px solid #e2e4e8;

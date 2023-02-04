@@ -85,7 +85,7 @@
         padding: 10px 15px;
         margin-bottom: 2.25rem;
         background-color: #f7f7f7;
-        border-radius: 3px;
+        border-radius: 0;
         font-style: italic;
         q {
             &:before,
@@ -111,7 +111,7 @@
     margin: 0;
     position: relative;
     overflow: hidden;
-    border-radius: 3px;
+    border-radius: 0;
     > a {
         position: relative;
         vertical-align: top;
@@ -366,7 +366,7 @@
         width: 90%;
         white-space: normal;
         img {
-            border-radius: 3px;
+            border-radius: 0;
         }
         > a, img {
             width: 100%;

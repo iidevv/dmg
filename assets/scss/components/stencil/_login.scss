@@ -114,7 +114,6 @@
         .new-customer {
             padding: 25px 20px;
             background-color: #f7f7f7;
-            border-radius: 3px;
             .panel-header, .panel-body {
                 background-color: transparent;
             }
@@ -307,7 +306,6 @@
             display: none;
             text-align: left;
             position: absolute;
-            border-radius: 3px;
             top: calc(100% + 10px);
             color: stencilColor('color-textBase');
             background-color: #ffffff;

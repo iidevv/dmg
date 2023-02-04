@@ -22,7 +22,7 @@ $second_value : str-slice($value_of_swatch_size, $position_of_x + 1);
         text-align: center;
         vertical-align: top;
         position: relative;
-        border-radius: 3px;
+        border-radius: 0;
         margin-right: 7px;
         border: 1px solid #c8c8c8;
         color: stencilColor('color-textBase');
@@ -33,7 +33,7 @@ $second_value : str-slice($value_of_swatch_size, $position_of_x + 1);
             height: 100%;
             z-index: -1;
             padding: 0 5px;
-            border-radius: 3px;
+            border-radius: 0;
             position: relative;
         }
         @include breakpoint("small") {
@@ -44,7 +44,7 @@ $second_value : str-slice($value_of_swatch_size, $position_of_x + 1);
         border: none;
         overflow: hidden;
         line-height: 1;
-        border-radius: 3px;
+        border-radius: 0;
         .form-option-variant[title="White"] {
             border: 1px solid #c8c8c8;
         }
@@ -107,7 +107,7 @@ $second_value : str-slice($value_of_swatch_size, $position_of_x + 1);
     line-height: 1;
     opacity: 0;
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 0;
     position: absolute;
     top: calc(100% + 5px);
     transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
