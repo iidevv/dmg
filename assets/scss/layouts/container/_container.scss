@@ -82,8 +82,9 @@
             }
             .slick-active {
                 button {
-                    opacity: 0.8;
-                    background-color: transparent;
+                    opacity: 1;
+                    border: 1px solid #ef4838;
+                    background-color: #ef4838
                 }
             }
         }

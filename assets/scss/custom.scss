@@ -135,6 +135,10 @@ h6 {
   }
 }
 
+.dmg-subcategories {
+  padding: 0 0 50px 0;
+}
+
 .dmg-category {
   position: relative;
   width: 100%;
@@ -281,16 +285,6 @@ h6 {
   }
 }
 
-.dmg-subcategories {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px;
-  margin-bottom: 50px;
-  @media(max-width: 767px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .dmg-subcategory {
   display: flex;
   flex-direction: column;
@@ -302,7 +296,7 @@ h6 {
   img {
     display: block;
     width: 100%;
-    height: 200px;
+    height: 160px;
     object-fit: contain;
     transition: all 0.2s ease-in-out;
   }
@@ -316,14 +310,11 @@ h6 {
   .title {
     display: flex;
     justify-content: center;
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
     font-weight: 600;
     text-align: center;
     margin: 0;
-  }
-  .count {
-    margin-left: 10px;
   }
   @media(max-width: 767px) {
     img {
@@ -337,5 +328,11 @@ h6 {
 
 
 .eapps-instagram-feed-posts-grid-load-more-text {
+  background: $primary;
+}
+
+.custom-product-filters .facetApplied a[data-applied-custom-facet="ymm-pfilter-clearall"],
+#toggle-ymm-price-values .button,
+.price-range-slider .range-bar .ui-slider-handle + span {
   background: $primary;
 }

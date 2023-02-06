@@ -1,20 +1,48 @@
 {{#if category.subcategories}}
-<div class="container">
-    <div class="dmg-subcategories">
-        {{#each category.subcategories}}
-        <a class="dmg-subcategory" href="{{url}}">
-            <div class="image">
-                <img class="lazyload" src="{{cdn 'img/loading.svg'}}"
-                data-src="{{getImage image 'themevale_subCategory_image_size' (cdn ../theme_settings.default_image_category)}}"
-                alt="{{name}}">
-            </div>
-            <div class="content">
-                <h3 class="title">
-                    <span class="text">{{name}}</span><span class="count">{{product_count}}</span>
-                </h3>
-            </div>
-        </a>
-        {{/each}}
+<div class="dmg-subcategories">
+    <div class="container">
+        <div class="productCarousel" data-list-name="{{list}}" data-slick='{
+            "dots": true,
+            "arrows": false,
+            "mobileFirst": true,
+            "slidesToShow": 2,
+            "slidesToScroll": 2,
+            "infinite": false,
+            "nextArrow": "<svg class=&apos;slick-next slick-arrow&apos;><use xlink:href=&apos;#icon-slick-next&apos;></use></svg>", 
+            "prevArrow": "<svg class=&apos;slick-prev slick-arrow&apos;><use xlink:href=&apos;#icon-slick-prev&apos;></use></svg>",
+            "responsive": [
+                {
+                    "breakpoint": 992,
+                    "settings": {
+                        "slidesToScroll": 6,
+                        "slidesToShow": 6,
+                        "dots": true,
+                        "arrows": true
+                    }
+                },
+                {
+                    "breakpoint": 551,
+                    "settings": {
+                        "slidesToScroll": 3,
+                        "slidesToShow": 3
+                    }
+                }
+            ]}'>
+            {{#each category.subcategories}}
+            <a class="dmg-subcategory" href="{{url}}">
+                <div class="image">
+                    <img class="lazyload" src="{{cdn 'img/loading.svg'}}"
+                        data-src="{{getImage image 'themevale_subCategory_image_size' (cdn ../theme_settings.default_image_category)}}"
+                        alt="{{name}}">
+                </div>
+                <div class="content">
+                    <h3 class="title">
+                        <span class="text">{{name}}</span>
+                    </h3>
+                </div>
+            </a>
+            {{/each}}
+        </div>
     </div>
 </div>
 {{/if}}

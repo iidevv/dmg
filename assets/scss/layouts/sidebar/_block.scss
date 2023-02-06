@@ -245,23 +245,6 @@
             padding-bottom: 10px;
             a {
                 font-weight: 400;
-                @media (min-width: 1025px) {
-                    &:before {
-                        left: 0;
-                        width: 0;
-                        bottom: 7px;
-                        content:"";
-                        height: 1px;
-                        position: absolute;
-                        transition: all 0.3s ease;
-                        background-color: stencilColor("color-textLink--hover");
-                    }
-                    &:hover {
-                        &:before {
-                            width: 100%;
-                        }
-                    }
-                }
             }
         }
     }
