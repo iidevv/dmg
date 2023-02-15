@@ -22,7 +22,6 @@ h6 {
 
 .dmg-products--featured {
   position: relative;
-  overflow: hidden;
   margin: 60px 0 0 0;
   .productCarousel.slick-slider.slick-dotted {
     margin-bottom: 60px;
@@ -42,10 +41,10 @@ h6 {
     z-index: 2;
     max-width: 340px;
     width: 100%;
-    padding: 10px 0;
-    margin: 0 auto 50px auto;
+    padding: 0 0 10px;
+    margin: -15px auto 50px auto;
     background: #fafafa;
-    min-height: 55px;
+    min-height: 42px;
     &::before,
     &::after {
       content: '';
@@ -53,15 +52,15 @@ h6 {
       top: 0;
       width: 0;
       height: 0;
-      border-left: 60px solid transparent;
-      border-right: 60px solid transparent;
-      border-top: 55px solid #fafafa;
+      border-top: 42px solid #fafafa;
     }
     &::before {
-      left: -60px;
+      left: -25px;
+      border-left: 25px solid transparent;
     }
     &::after {
-      right: -60px;
+      right: -25px;
+      border-right: 25px solid transparent;
     }
   }
   .card {
@@ -350,4 +349,20 @@ h6 {
 
 .category-description {
   margin: 0 0 40px;
+}
+
+.all-categories-list .dropdown-category-list .navPage-subMenu-item a {
+  margin-right: 20px;
+}
+
+.main.full {
+  overflow: hidden;
+}
+
+.heroCarousel .slick-arrow {
+  border: 2px solid transparent;
+}
+
+.heroCarousel .slick-arrow:hover {
+  border: 2px solid white;
 }
