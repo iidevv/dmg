@@ -1,0 +1,1044 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,600,700|Rajdhani:400,600,700");
+/*=========================================
+=            www.themevale.com            =
+=========================================*/
+/*--------  1.0 Global style  -------*/
+body {
+  color: #333;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Arimo", Arial, Helvetica, sans-serif;
+}
+
+.page {
+  overflow-x: hidden;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  color: #333;
+  font-weight: 700;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover, a:focus, a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+strong,
+b {
+  font-weight: 700;
+  color: #333;
+}
+
+.header {
+  border: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 15px 0 15px 0;
+}
+
+.header-logo img {
+  max-height: 24px;
+}
+
+@media (min-width: 551px) {
+  .header-logo {
+    padding: 25px 0 25px 0;
+  }
+  .header-logo img {
+    max-height: 40px;
+  }
+  .header-logo .checkoutHeader-heading {
+    font-size: 36px;
+  }
+}
+
+.footer {
+  text-align: left;
+  padding: 15px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+#Header > .inner,
+.main > .inner,
+.footer-links > .inner {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: transparent;
+}
+
+.Content {
+  padding: 50px 0;
+}
+
+.Content.Widest {
+  padding: 50px 0;
+}
+
+.btn,
+.btn.alt,
+.button {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 15px 12px 15px;
+  line-height: 1;
+  border-radius: 0;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border: 1px solid #333;
+  background-color: #333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+.btn:hover, .btn:focus, .btn:active,
+.btn.alt:hover,
+.btn.alt:focus,
+.btn.alt:active,
+.button:hover,
+.button:focus,
+.button:active {
+  color: #ffffff;
+  border: 1px solid #333;
+  background-color: #333;
+}
+
+@media (min-width: 415px) {
+  .btn,
+  .btn.alt,
+  .button {
+    font-size: 16px;
+    padding: 13px 30px 12px 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .btn:hover, .btn:focus, .btn:active,
+  .btn.alt:hover,
+  .btn.alt:focus,
+  .btn.alt:active,
+  .button:hover,
+  .button:focus,
+  .button:active {
+    color: #333;
+    border: 1px solid #333;
+    background-color: transparent;
+  }
+}
+
+hr,
+hr.clear {
+  border: none;
+  border-bottom: 1px solid #ababab;
+}
+
+input,
+select,
+textarea,
+input.Textbox,
+input[type="text"] {
+  height: 40px;
+  color: #333;
+  font-size: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  line-height: 20px;
+  padding: 10px 15px;
+  border-radius: 0;
+  border-color: #dcdcdc;
+  font-family: "Arimo", Arial, Helvetica, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+input.Textbox:focus,
+input[type="text"]:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div.selector {
+  height: 40px;
+  font-size: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  line-height: 20px;
+  border-radius: 0;
+  border-color: #dcdcdc;
+  min-height: 40px !important;
+  padding: 10px 35px 10px 15px;
+}
+
+div.selector:focus, div.selector.focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div.selector span {
+  height: auto;
+  padding-left: 0;
+  line-height: 20px;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+/*--------  2.0 Onepage checkout  ---*/
+.ExpressCheckoutBlock {
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: 30px;
+  border: 1px solid #e2e4e8 !important;
+}
+
+.ExpressCheckoutBlock .ExpressCheckoutTitle {
+  margin: 0;
+  border-radius: 3px 3px 0 0;
+  background-color: #f7f7f7;
+}
+
+.ExpressCheckoutBlock .ExpressCheckoutTitle h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 350px;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+.ExpressCheckoutBlock .ExpressCheckoutTitle .step {
+  left: auto;
+  width: 48px;
+  height: 48px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 0;
+  line-height: 49px;
+  position: relative;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ffffff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  border-radius: 3px 0 0 0;
+}
+
+.ExpressCheckoutBlock .ExpressCheckoutTitle span.ExpressCheckoutCompletedContent {
+  color: #333;
+  display: inline-block;
+}
+
+.ExpressCheckoutBlock .ExpressCheckoutTitle a.ChangeLink {
+  right: 20px;
+  padding: 0;
+  border: none;
+  z-index: 10;
+  color: #005599;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48px;
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+.ExpressCheckoutBlock .ExpressCheckoutContent {
+  padding: 30px 48px 40px 48px;
+}
+
+.ExpressCheckoutBlock .ExpressCheckoutContent .PTB20 strong {
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+.ExpressCheckoutBlock .PTB20 {
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.ExpressCheckoutBlock.ExpressCheckoutBlockCollapsed {
+  color: #8c8c8c;
+  margin-bottom: 15px;
+}
+
+.ExpressCheckoutBlock.ExpressCheckoutBlockCollapsed .ExpressCheckoutTitle h3 {
+  color: #333;
+}
+
+.ExpressCheckoutBlock.ExpressCheckoutBlockCollapsed .ExpressCheckoutTitle span.ExpressCheckoutCompletedContent {
+  color: #8c8c8c;
+  font-style: italic;
+  display: inline-block;
+}
+
+.ExpressCheckoutBlock#LayoutColumn2, .ExpressCheckoutBlock#ChooseBillingAddress {
+  border: none !important;
+}
+
+#CheckoutGuestForm h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#CheckoutGuestForm .mbm > dd {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#CheckoutGuestForm input.btn {
+  min-width: 160px;
+}
+
+.AccountLogin h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.AccountLogin dl > dd #login_email {
+  margin-bottom: 10px;
+}
+
+.AccountLogin dl > dd #login_pass {
+  margin-bottom: 0px;
+}
+
+.AccountLogin dl > dd > a {
+  color: #005599;
+}
+
+.AccountLogin input.btn {
+  min-width: 160px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #ef4838;
+  background-color: #ef4838;
+  color: #ffffff;
+}
+
+.AccountLogin input.btn:hover, .AccountLogin input.btn:focus, .AccountLogin input.btn:active {
+  border-color: #ef4838;
+  background-color: #ffffff;
+  color: #ef4838;
+}
+
+.HorizontalFormContainer dd .selector span {
+  font-size: 12px;
+  font-family: "Arimo", Arial, Helvetica, sans-serif;
+}
+
+.HorizontalFormContainer dl > dt {
+  color: #333;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.HorizontalFormContainer p.Submit {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.HorizontalFormContainer dt {
+  width: 150px;
+}
+
+.AddBillingAddress dd,
+.AddShippingAddress dd {
+  width: 270px;
+  padding: 0 0 20px 0px !important;
+}
+
+.AddBillingAddress .HorizontalFormContainer dl dt,
+.AddShippingAddress .HorizontalFormContainer dl dt {
+  text-align: left;
+}
+
+.AddBillingAddress .HorizontalFormContainer dl dt:nth-of-type(2n),
+.AddShippingAddress .HorizontalFormContainer dl dt:nth-of-type(2n) {
+  margin-left: 140px;
+}
+
+.AddBillingAddress .HorizontalFormContainer dl dd:nth-last-of-type(2),
+.AddShippingAddress .HorizontalFormContainer dl dd:nth-last-of-type(2) {
+  padding-bottom: 0 !important;
+}
+
+.SelectMultipleAddresses {
+  margin-left: 0 !important;
+}
+
+#uniform-sel_billing_address,
+#uniform-sel_shipping_address {
+  width: auto;
+}
+
+table.General thead,
+table.CartContents thead {
+  background-color: #fafafa;
+}
+
+table.General thead tr > th,
+table.CartContents thead tr > th {
+  font-weight: 700;
+  line-height: 20px;
+  padding: 8px 15px;
+  color: #333;
+  font-size: 14px;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+table.General tbody strong,
+table.CartContents tbody strong {
+  font-weight: 700;
+  color: #059;
+}
+
+table.General tbody tr > td,
+table.CartContents tbody tr > td {
+  line-height: 20px;
+  padding: 20px 15px;
+  border-color: #dcdcdc;
+}
+
+table.General tbody tr > td > em,
+table.CartContents tbody tr > td > em {
+  font-weight: 700;
+  color: #333;
+  font-style: normal;
+}
+
+table.General tbody tr > td:nth-last-of-type(1), table.General tbody tr > td:nth-last-of-type(2),
+table.CartContents tbody tr > td:nth-last-of-type(1),
+table.CartContents tbody tr > td:nth-last-of-type(2) {
+  font-size: 14px;
+}
+
+table.General tfoot strong,
+table.CartContents tfoot strong {
+  font-weight: 700;
+  color: #333;
+}
+
+table.General tfoot tr.CheckoutRedeemCoupon label,
+table.CartContents tfoot tr.CheckoutRedeemCoupon label {
+  font-weight: 700;
+  color: #333;
+}
+
+table.General tfoot tr.SubTotal > td em,
+table.CartContents tfoot tr.SubTotal > td em {
+  font-weight: 700;
+  color: #333;
+  font-style: normal;
+}
+
+table.General tfoot tr.SubTotal > td:nth-last-of-type(1),
+table.CartContents tfoot tr.SubTotal > td:nth-last-of-type(1) {
+  font-size: 14px;
+}
+
+.CartContents tfoot .SubTotal td {
+  border-color: #dcdcdc !important;
+}
+
+#provider_list {
+  margin-bottom: -5px;
+}
+
+#provider_list > .radio {
+  margin-bottom: 12px;
+}
+
+#provider_list > .radio + label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 11px;
+}
+
+.CheckoutOrderComments {
+  margin-bottom: 20px;
+}
+
+#bottom_payment_button {
+  height: auto;
+  color: #ffffff;
+  border: 1px solid #ef4838;
+  background-color: #ef4838;
+}
+
+#bottom_payment_button:hover, #bottom_payment_button:focus, #bottom_payment_button:active {
+  color: #ef4838;
+  border: 1px solid #ef4838;
+  background-color: #ffffff;
+}
+
+/*--------  3.0 muiti address  ------*/
+h1.TitleHeading {
+  color: #333;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+.multiStep {
+  display: table;
+  width: calc(100% - 1px);
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.multiStep li {
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #ececec;
+  border-right: none;
+  background-color: #fff;
+}
+
+.multiStep li h4 {
+  color: #333;
+  border-bottom: none;
+  text-transform: capitalize;
+  font-size: 12px;
+  padding: 8px 0;
+  font-weight: 700;
+}
+
+.multiStep li h4 a {
+  color: #333;
+}
+
+.multiStep li.ActivePage {
+  background-color: #fafafa;
+}
+
+.multiStep li.ActivePage h4 {
+  padding: 8px 0;
+  margin-bottom: 0;
+  color: #333;
+  border-bottom: none;
+}
+
+.multiStep li:last-child {
+  border-right: 1px solid #ececec;
+}
+
+.Content h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.Content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+#LayoutColumn1 .Moveable .icon-add {
+  border-radius: 0;
+  background-color: #333;
+}
+
+#LayoutColumn1 .Moveable h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+#LayoutColumn1 .Moveable h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+#LayoutColumn1 .Moveable h4 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+#LayoutColumn1 .Moveable .BlockContent .TabNav {
+  padding: 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+}
+
+#LayoutColumn1 .Moveable .BlockContent .TabNav li a {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  border-color: #ececec;
+}
+
+#LayoutColumn1 .Moveable .BlockContent #TabContentAddressMultiple {
+  padding-top: 0;
+}
+
+#LayoutColumn1 .Moveable .ExpressCheckoutContent .CreateAccount ul li {
+  line-height: 28px;
+}
+
+#LayoutColumn1 .Moveable .ShippingAddressList {
+  position: relative;
+  display: inline-block;
+  min-width: 320px;
+}
+
+#LayoutColumn1 .Moveable .ShippingAddressList li {
+  width: 100%;
+  margin-right: 0;
+}
+
+#LayoutColumn1 .Moveable .ShippingAddressList .UtilityLinks {
+  margin: 0;
+  top: 0;
+  right: 0;
+  width: auto;
+  position: absolute;
+}
+
+#LayoutColumn1 .Moveable .ShippingAddressList .NoMarginBottom {
+  line-height: 30px;
+}
+
+#LayoutColumn1 .Moveable.ExpressCheckoutBlock {
+  border: none !important;
+}
+
+/*--------  4.0 Thank you page  -----*/
+.checkout-banner {
+  text-align: left;
+}
+
+.checkout-banner a {
+  color: #333;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ExpressCheckoutBlock .mtm .BoldUpper,
+.ExpressCheckoutBlock .NotifyMessage .Bold {
+  font-weight: 700;
+  color: #333;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.ExpressCheckoutBlock .NotifyMessage .Bold {
+  color: #333;
+  font-weight: 700;
+}
+
+.ExpressCheckoutBlock .mtm a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: underline;
+}
+
+#share-product .tabs {
+  top: auto;
+  height: 40px;
+  display: block;
+}
+
+#share-product .tabs .sharingTab {
+  border-radius: 0;
+  color: #333;
+  font-weight: 700;
+  position: relative;
+  border-bottom: none;
+  padding: 8px 25px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #ececec;
+  font-family: "Arimo", Arial, Helvetica, sans-serif;
+}
+
+#share-product .tabs .sharingTab.active {
+  border-bottom: 1px solid #fff;
+}
+
+#tabcontent {
+  border: 1px solid #ececec;
+  border-radius: 0;
+}
+
+#tabcontent #shareText {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Arimo", Arial, Helvetica, sans-serif;
+}
+
+#tabcontent #url {
+  margin-top: 10px;
+  display: none;
+}
+
+#tabcontent .btn {
+  min-width: 200px;
+  line-height: 1;
+}
+
+#tabcontent .chooseAnotherToShare {
+  margin-left: 15px;
+}
+
+#tabcontent .chooseAnotherToShare a {
+  margin-left: 15px;
+  color: #059;
+}
+
+#tabcontent .chooseAnotherToShare a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+@media (min-width: 992px) {
+  #tabcontent {
+    padding: 35px 15px;
+  }
+}
+
+.customerView {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#SimilarMultiProductsByCustomerViews {
+  padding-top: 50px;
+  border-top: none;
+}
+
+#SimilarMultiProductsByCustomerViews > h4 {
+  font-size: 20px;
+}
+
+#SimilarMultiProductsByCustomerViews .ProductList {
+  margin: 0 -15px;
+}
+
+#SimilarMultiProductsByCustomerViews .ProductList li {
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+#SimilarMultiProductsByCustomerViews .ProductList .ProductImage {
+  margin-bottom: 15px;
+}
+
+#SimilarMultiProductsByCustomerViews .ProductList .ProductImage > a {
+  height: auto !important;
+}
+
+.ProductList .ProductImage {
+  margin-bottom: 15px;
+}
+
+.ProductList .ProductImage img {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+}
+
+.ProductList .ProductDetails {
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.ProductList .ProductDetails .pname {
+  padding: 0;
+  color: #005599;
+  line-height: 20px;
+}
+
+.ProductList .ProductDetails .pname:hover {
+  color: #005599;
+}
+
+.ProductList .ProductPriceRating {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.ProductList .p-price {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.ProductList .p-price .RetailPriceValue {
+  color: #8c8c8c;
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.ProductList .p-price .SalePrice {
+  color: #ef4838;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ProductList .btn {
+  line-height: 1;
+  min-width: 160px;
+  color: #ffffff;
+  border-color: #333;
+  background-color: #333;
+}
+
+/*--------  RESPONSIVE  -------------*/
+@media (max-width: 1024px) {
+  .main,
+  .footer-links {
+    display: block;
+  }
+  .main > .inner,
+  .footer-links > .inner {
+    max-width: calc(100% - 30px);
+  }
+  .AddBillingAddress .HorizontalFormContainer dl dt,
+  .AddShippingAddress .HorizontalFormContainer dl dt {
+    text-align: left;
+  }
+  .AddBillingAddress .HorizontalFormContainer dl dt:nth-of-type(2n),
+  .AddShippingAddress .HorizontalFormContainer dl dt:nth-of-type(2n) {
+    margin-left: 0;
+  }
+  .header-logo {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .ExpressCheckoutBlock .ExpressCheckoutTitle h3 {
+    min-width: 0;
+    margin-right: 30px;
+  }
+  .ExpressCheckoutBlock .ExpressCheckoutContent {
+    padding: 20px;
+  }
+  #CheckoutGuestForm,
+  .AccountLogin h4 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-logo {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .header-logo img {
+    max-height: 30px;
+    margin-left: 0;
+  }
+  .checkout-banner {
+    padding: 20px 0;
+  }
+  .checkout-banner a {
+    font-size: 12px;
+  }
+  .ExpressCheckoutBlock .ExpressCheckoutTitle h3 {
+    font-size: 16px;
+  }
+  .ExpressCheckoutBlock .ExpressCheckoutTitle .step {
+    width: 35px;
+    height: 35px;
+    line-height: 37px;
+  }
+  .ExpressCheckoutBlock .ExpressCheckoutTitle a.ChangeLink {
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 35px;
+  }
+  #multiAddressForm div.selector {
+    width: 400px;
+  }
+  #LayoutColumn1 .multiStep li h4 {
+    font-size: 12px;
+  }
+  .chooseAnotherToShare {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 700px) {
+  #tabcontent #shareText {
+    margin-top: 10px;
+  }
+  #share-product .tabs {
+    overflow: hidden;
+  }
+  .ExpressCheckoutContent .AccountLogin,
+  .ExpressCheckoutContent .CreateAccount {
+    padding: 0;
+    width: 100%;
+  }
+  .mtop {
+    margin-top: 20px;
+  }
+  .multiStep {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .multiStep li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    border: none;
+  }
+  .multiStep li h4 {
+    border: 1px solid #ececec;
+  }
+  .multiStep li.ActivePage h4 {
+    border: 1px solid #333;
+  }
+  #LayoutColumn1 .Moveable > h2 {
+    font-size: 14px;
+  }
+  .Content h2 {
+    font-size: 14px;
+  }
+  #multiAddressForm div.selector {
+    width: 300px;
+  }
+  .CartContents tfoot .SubTotal td {
+    border-color: #dcdcdc !important;
+  }
+  .CartContents tfoot .SubTotal td + td {
+    padding-left: 10px;
+    min-width: 100px;
+  }
+  .CartContents tfoot .SubTotal td + td em {
+    font-style: initial;
+  }
+  #SimilarMultiProductsByCustomerViews .ProductList li {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="date"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"],
+  textarea,
+  select {
+    font-size: 12px !important;
+  }
+  #multiAddressForm div.selector {
+    width: 250px;
+  }
+}
+
+@media (max-width: 414px) {
+  #multiAddressForm div.selector {
+    width: 200px;
+  }
+  .CartContents tfoot .SubTotal td {
+    text-align: left;
+    font-size: 13px;
+  }
+  #SimilarMultiProductsByCustomerViews .ProductList {
+    margin: 0 -8px;
+  }
+  #SimilarMultiProductsByCustomerViews .ProductList li {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  #multiAddressForm div.selector {
+    width: 169px;
+  }
+}
+
+/*=====  End of www.themevale.com  ======*/
+/*# sourceMappingURL=checkout.css.map */
