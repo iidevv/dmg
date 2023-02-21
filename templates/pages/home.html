@@ -21,7 +21,6 @@ carousel: {{theme_settings.homepage_show_carousel}}
 dots=theme_settings.homepage_show_carousel_dots}}
 {{/if}}
 {{{snippet 'home_content'}}}
-{{{region name="below_carousel"}}}
 {{/partial}}
 
 {{#partial "page"}}
@@ -45,45 +44,45 @@ dots=theme_settings.homepage_show_carousel_dots}}
     {{#if products.new}}
     <div class="dmg-products">
         <div class="container">
-            <h2 class="page-heading">New Products</h2>
-                {{> components/products/carousel-new products=products.new arrows=true}}
+            <h2 class="page-heading">DMG - Warehouse</h2>
+                {{{region name="below_carousel"}}}
         </div>
     </div>
     {{/if}}
     <div class="dmg-categories">
         <div class="container">
             <div class="dmg-categories__inner">
-                <a href="/helmets/" class="dmg-category">
+                <a href="/motorcycle-helmets/" class="dmg-category">
                     <h3>Helmets</h3>
                     <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/helmets-category.jpg"
                         alt="helmets" />
                 </a>
-                <a href="/casual-riding-shirts-light-jackets/" class="dmg-category">
+                <a href="/dmg-warehouse-jackets/" class="dmg-category">
                     <h3>Jackets</h3>
                     <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/jackets.jpg"
                         alt="jackets" />
                 </a>
-                <a href="/pants/" class="dmg-category">
+                <a href="/dmg-warehouse-pants/" class="dmg-category">
                     <h3>Pants</h3>
                     <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/pants.jpg"
                         alt="pants" />
                 </a>
-                <a href="/boots/" class="dmg-category">
+                <a href="/motorcycle-boots-and-shoes/" class="dmg-category">
                     <h3>Boots</h3>
                     <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/boots.jpg"
                         alt="boots" />
                 </a>
-                <a href="/gloves/" class="dmg-category">
+                <a href="/dmg-warehouse-gloves/" class="dmg-category">
                     <h3>Gloves</h3>
                     <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/gloves.jpg"
                         alt="gloves" />
                 </a>
-                <a href="/motorcycle-accessories/motorcycle-luggage/" class="dmg-category">
+                <a href="/warehouse-luggage-dmg/" class="dmg-category">
                     <h3>Luggage</h3>
                     <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/luggage.jpg"
