@@ -2665,12 +2665,14 @@
     }
     svg {
       pointer-events: none;
+      width: 36px;
+      height: 36px;
     }
   }
 
   .menu__close {
     display: block;
-    color: #000;
+    color: #fff;
     font-size: 40px;
     text-align: right;
     width: 100%;
@@ -2679,6 +2681,15 @@
     border: none;
     margin: 10px 0 40px;
   }
+  .departments__button {
+    color: #fff;
+    background: transparent;
+  }
+
+  .departments__list {
+    background: #333;
+  }
+
   .menu__inner {
     display: flex;
     flex-direction: column;
@@ -2690,7 +2701,7 @@
     right: 0;
     transform: translateX(110%);
     z-index: 9999;
-    background: #fff;
+    background: #333;
     width: 290px;
     padding: 10px 10px 10px 20px;
     transition: all 0.9s ease-in-out;
@@ -2712,12 +2723,35 @@
       }
     }
     a {
-      color: #fff;
       font-size: 16px;
       line-height: 1.4;
       text-align: left;
     }
   }
+  .departments__arrow {
+     display: none;
+  }
+
+  .departments__item-link,
+  .main-menu__link {
+    color: #fff !important;
+    font-size: 24px;
+    padding: 8px 11px;
+    margin-bottom: 5px;
+    border-left: 2px solid #333;
+  }
+
+  .departments__item-link:focus,
+  .main-menu__link:focus,
+  .main-menu .main-menu__item:hover .main-menu__link  {
+    background: transparent;
+    border-left: 2px solid #ef4838;
+  }
+
+  .themevale_sidebar-mobile {
+    z-index: 9;
+  }
+
   .main-menu__list {
     display: flex;
     flex-direction: column;
@@ -2748,19 +2782,15 @@
     margin-bottom: 15px;
   }
   .header__navbar-departments {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #979797;
     margin-bottom: 5px;
     padding-bottom: 5px;
   }
   .departments__button-title {
-    font-size: 18px;
-    font-weight: 600;
+    display: none;
   }
   .departments__button-icon {
     display: none;
-  }
-  .departments__item-link {
-    padding: 5px 11px;
   }
   .departments__item-arrow,
   .departments__menu-container {

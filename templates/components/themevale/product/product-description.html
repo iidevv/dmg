@@ -59,36 +59,59 @@
                     {{> components/themevale/tabs/tab-shipping}}
                 </div>
             </div>
-            <div class="tab-content" id="tab-custom">
-                <div class="toggle-title">
-                    <a class="toggleLink" data-collapsible href="#tabCustomProduct-content">
-                        <span class="page-heading">{{theme_settings.products_tab-title-2}}</span>
-                        <svg class="icon">
-                            <use xlink:href="#icon-slick-next" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="toggle-content" id="tabCustomProduct-content" aria-hidden="false">
-                    {{> components/themevale/tabs/tab-custom}}
-                </div>
-            </div>
-            <div class="tab-content" id="tab-faq">
-                <div class="toggle-title">
-                    <a class="toggleLink" data-collapsible href="#tabFaq-content">
-                        <span class="page-heading">{{theme_settings.products_tab-title-3}}</span>
-                        <svg class="icon">
-                            <use xlink:href="#icon-slick-next" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="toggle-content" id="tabFaq-content" aria-hidden="false">
-                    {{> components/themevale/tabs/tab-faq}}
-                </div>
-            </div>
         </div>
     </div>
 
 </div>
+<div class="product-features">
+    <ul class="services">
+        <li class="item">
+            <div class="service-item">
+                <div class="icons">
+                    <i class="icon"><svg><use xlink:href="#{{theme_settings.products_services-icon-1}}"></use></svg></i>
+                </div>
+                <div class="content">
+                    <h4 class="title">{{theme_settings.products_services-title-1}}</h4>
+                    <p class="description">{{theme_settings.products_services-content-1}}</p>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="service-item">
+                <div class="icons">
+                    <i class="icon"><svg><use xlink:href="#{{theme_settings.products_services-icon-2}}"></use></svg></i>
+                </div>
+                <div class="content">
+                    <h4 class="title">{{theme_settings.products_services-title-2}}</h4>
+                    <p class="description">{{theme_settings.products_services-content-2}}</p>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="service-item">
+                <div class="icons">
+                    <i class="icon"><svg><use xlink:href="#{{theme_settings.products_services-icon-3}}"></use></svg></i>
+                </div>
+                <div class="content">
+                    <h4 class="title">{{theme_settings.products_services-title-3}}</h4>
+                    <p class="description">{{theme_settings.products_services-content-3}}</p>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="service-item">
+                <div class="icons">
+                    <i class="icon"><svg><use xlink:href="#{{theme_settings.products_services-icon-4}}"></use></svg></i>
+                </div>
+                <div class="content">
+                    <h4 class="title">{{theme_settings.products_services-title-4}}</h4>
+                    <p class="description">{{theme_settings.products_services-content-4}}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
 {{#if product.related_products}}
 <div class="toggle productRelated" id="product-related" data-product-related>
     <div class="toggle-title">

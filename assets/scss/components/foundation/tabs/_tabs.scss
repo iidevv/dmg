@@ -210,6 +210,17 @@
             height: 434px;
         }
     }
+    @media (max-width: 1025px) {
+        .icon {
+            display: none;
+        }
+        .toggle-content {
+            display: block;
+        }
+        h6 {
+            margin: 0 0 10px;
+        }
+    }
 }
 
 // -----------------------------------------------------------------------------

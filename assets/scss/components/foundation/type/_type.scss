@@ -152,6 +152,9 @@ h6 {
         position: relative;
         text-transform: capitalize;
         color: stencilColor('color-linkHeading');
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
         .text {
             margin: 0;
             font-weight: 400;

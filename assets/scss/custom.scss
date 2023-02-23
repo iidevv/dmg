@@ -315,10 +315,59 @@ h6 {
     text-align: center;
     margin: 0;
   }
+}
+
+.dmg-subcategories {
+  display: block;
   @media(max-width: 767px) {
-    .title {
-      text-align: left;
-    }
+    display: none;
+  }
+}
+
+.dmg-subcategories--mobile {
+  display: none;
+  @media(max-width: 767px) {
+    display: block;
+  }
+}
+
+.dmg-subcategories__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 15px;
+  list-style: none;
+  padding: 0;
+  max-width: 330px;
+  margin: 0 auto;
+  .title {
+    margin-bottom: 15px;
+  }
+  .image {
+    height: 90px;
+  }
+  .dmg-subcategory {
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+}
+
+.dmg-subcategories__btn {
+  display: none;
+}
+
+@media(max-width: 767px) {
+  .dmg-subcategory .image {
+    background: #fafafa;
+  }
+  .dmg-subcategory img {
+    height: 90px;
+  }
+  .dmg-subcategories__btn {
+    display: block;
+    margin: 30px auto 0 auto;
+  }
+  .themevale_breadcrumbCategory .page-heading {
+    text-align: center;
   }
 }
 
@@ -365,4 +414,21 @@ h6 {
 
 .heroCarousel .slick-arrow:hover {
   border: 2px solid white;
+}
+
+.menu-btn-item {
+  animation: menu-btn 1s ease-in-out;
+}
+
+@keyframes menu-btn {
+  0%{
+    opacity: 0;
+    transform: translateX(-50px);
+    fill: #ef4838;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+    fill: #333;
+  }
 }

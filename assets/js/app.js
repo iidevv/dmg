@@ -293,4 +293,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  const subCategories = document.querySelectorAll('.dmg-subcategories__list a');
+  const subCategoriesBtn = document.querySelector('.dmg-subcategories__btn');
+  if (subCategories[0]) {
+      if(subCategories.length > 6) {
+        for (let i = 6; i < subCategories.length; i++) {
+          subCategories[i].style.display = 'none';
+        }
+        subCategoriesBtn.addEventListener('click', () => {
+
+          subCategoriesBtn.style.display = "none";
+
+          for (let i = 6; i < subCategories.length; i++) {
+            subCategories[i].style.height = '0px';
+            subCategories[i].style.display = 'block';
+            subCategories[i].style.height = subCategories[i].scrollHeight+"px";
+          }
+        });
+      } else {
+        subCategoriesBtn.style.display = "none";
+      }
+   }
 });

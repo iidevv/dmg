@@ -292,8 +292,8 @@
     text-transform: uppercase;
     font-family: $fontFamily-headings;
     color: stencilColor('color-textHeading');
-    @include breakpoint('small') {
-        font-size: 20px;
+    @media(max-width:1200px) {
+        font-size: 22px;
     }
 }
 
@@ -316,6 +316,9 @@
         color: stencilColor('color-textHeading');
         a {
             color: inherit;
+        }
+        @media(max-width:1200px) {
+            font-size: 18px;
         }
     }
 }

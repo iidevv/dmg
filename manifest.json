@@ -26,6 +26,9 @@
     "pages/home": [
       {
         "name": "below_carousel"
+      },
+      {
+        "name": "below_ymm"
       }
     ],
     "pages/order-confirmation": [],
