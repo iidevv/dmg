@@ -826,29 +826,3 @@
 }
 
 /*=====  End of www.themevale.com  ======*/
-
-// custom
-
-.footer__decor {
-  height: 20px;
-  overflow: hidden;
-  width: 100%;
-  background: #fafafa;
-  position: relative;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 15%;
-    height: 100%;
-    background: #333;
-  }
-  &::before {
-    left: -15px;
-    transform: skewX(30deg);
-  }
-  &::after {
-    right: -15px;
-    transform: skewX(-30deg);
-  }
-}

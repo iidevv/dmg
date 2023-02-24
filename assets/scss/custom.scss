@@ -20,6 +20,34 @@ h6 {
   }
 }
 
+.dmg-products-dark-bg {
+  background: #333;
+  color: #fff;
+  .page-heading {
+    margin: 30px 0;
+    color: #fff;
+  }
+  .slick-arrow {
+    background: #fff;
+    border-radius: 50%;
+    fill: $primary;
+    padding: 10px;
+  }
+  .slick-dots li button {
+    background: #fff;
+    border: 1px solid $primary;
+  }
+  .card {
+    background: #fff;
+    padding: 8px;
+  }
+}
+
+.card-title {
+  height: 44px;
+  overflow: hidden;
+}
+
 .dmg-products--featured {
   position: relative;
   margin: 60px 0 0 0;
@@ -47,7 +75,7 @@ h6 {
     min-height: 42px;
     &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       width: 0;
@@ -91,8 +119,34 @@ h6 {
   }
 }
 
-.dmg-products__decor {
-  height: 20px;
+.dmg-decor-top {
+  display: block;
+  height: 25px;
+  overflow: hidden;
+  width: 100%;
+  background: #fafafa;
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    background: #333;
+  }
+  &::before {
+    left: -15px;
+    transform: skewX(30deg);
+  }
+  &::after {
+    right: -15px;
+    transform: skewX(-30deg);
+  }
+}
+
+.dmg-decor-bottom {
+  display: block;
+  height: 25px;
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -263,10 +317,13 @@ h6 {
   background: #333;
   color: #fff;
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 0 0;
   .page-heading {
     color: $primary;
     margin: 0 0 15px;
+  }
+  .button {
+    margin-bottom: 15px;
   }
   p {
     padding: 0 0 15px;
@@ -289,13 +346,13 @@ h6 {
   flex-direction: column;
   &:hover {
     img {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
   img {
     display: block;
     width: 100%;
-    height: 100px;
+    height: 94px;
     object-fit: contain;
     transition: all 0.2s ease-in-out;
   }
@@ -319,14 +376,14 @@ h6 {
 
 .dmg-subcategories {
   display: block;
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
 .dmg-subcategories--mobile {
   display: none;
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     display: block;
   }
 }
@@ -347,7 +404,7 @@ h6 {
   }
   .dmg-subcategory {
     overflow: hidden;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 }
 
@@ -355,7 +412,7 @@ h6 {
   display: none;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .dmg-subcategory .image {
     background: #fafafa;
   }
@@ -371,18 +428,18 @@ h6 {
   }
 }
 
-@media(max-height: 900px) {
+@media (max-height: 900px) {
   .departments__megamenu-inner::-webkit-scrollbar {
     width: 0;
   }
-  
+
   .departments__megamenu-inner {
     overflow-x: auto;
     height: 90vh;
   }
-  
+
   .departments__megamenu-inner .megamenu__image {
-    opacity: .4;
+    opacity: 0.4;
   }
 }
 
@@ -390,7 +447,9 @@ h6 {
   background: $primary;
 }
 
-.custom-product-filters .facetApplied a[data-applied-custom-facet="ymm-pfilter-clearall"],
+.custom-product-filters
+  .facetApplied
+  a[data-applied-custom-facet="ymm-pfilter-clearall"],
 #toggle-ymm-price-values .button,
 .price-range-slider .range-bar .ui-slider-handle + span {
   background: $primary;
@@ -421,14 +480,35 @@ h6 {
 }
 
 @keyframes menu-btn {
-  0%{
+  0% {
     opacity: 0;
     transform: translateX(-50px);
     fill: #ef4838;
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateX(0);
     fill: #333;
   }
 }
+
+.css-9z33oj .sd-product-set__bullet-active {
+  background: $primary !important;
+}
+
+.css-8fi82c {
+  border: 1px solid $primary !important;
+}
+
+.css-1clkqco a {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 1;
+}
+
+.sd-product-set__arrow--right,
+.sd-product-set__arrow--left {
+  background: $primary !important;
+}
+
+
