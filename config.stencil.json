@@ -1,7 +1,9 @@
 {
   "customLayouts": {
     "brand": {},
-    "category": {},
+    "category": {
+      "dmg-warehouse.html": "/warehouse/"
+    },
     "page": {},
     "product": {}
   },

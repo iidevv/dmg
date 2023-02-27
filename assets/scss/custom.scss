@@ -44,8 +44,43 @@ h6 {
 }
 
 .card-title {
-  height: 44px;
+  height: 44px !important;
   overflow: hidden;
+}
+
+.price-section {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body #product_list ul.productGrid h4.card-title, #product_list ul.productGrid li.product article.card h4 > a {
+  height: 44px !important;
+  overflow: hidden !important;
+}
+body .custom-product-filters input[type="checkbox"], .custom-product-filters input[type="radio"] {
+  width: auto;
+  margin: 5px 5px 0 0;
+}
+
+body .custom-product-filters .accordion-content li.navList-item > input, .custom-product-filters .accordion-content li.navList-item > label {
+  max-width: 90%;
+}
+
+.custom-product-filters .accordion-content .navList .arw {
+  right: -5px;
+  top: 4px;
+}
+
+.result-filters .productGrid .product.threeColumnLayout .sale-text {
+  background: red;
+  color: #fff;
+  font-size: 14px;
+  padding: 2px 5px;
+  font-weight: 700;
 }
 
 .dmg-products--featured {
@@ -412,6 +447,29 @@ h6 {
   display: none;
 }
 
+.warehouse-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.warehouse-subcategories {
+  margin: 0 0 50px;
+}
+.warehouse-list a {
+  display: block;
+  padding: 5px 10px;
+  margin: 5px;
+  background: #333;
+  color: #fff;
+  font-weight: 700;
+  &:hover {
+    background: $primary;
+  }
+}
+
 @media (max-width: 767px) {
   .dmg-subcategory .image {
     background: #fafafa;
@@ -425,6 +483,20 @@ h6 {
   }
   .themevale_breadcrumbCategory .page-heading {
     text-align: center;
+  }
+  .four-dropdownsPerRow select,
+  .button-action button {
+    border-radius: 0 !important;
+  }
+  .slick-dots li {
+    margin: 0 8px;
+  }
+  .slick-dots {
+    bottom: -40px;
+  }
+  .slick-dots li button {
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -510,5 +582,3 @@ h6 {
 .sd-product-set__arrow--left {
   background: $primary !important;
 }
-
-

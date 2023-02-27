@@ -2648,6 +2648,16 @@
     overflow: hidden;
   }
 
+  .header {
+    a, button {
+      transition: all .15s ease-in-out;
+    }
+    a:active,
+    button:active {
+      transform: scale(0.95);
+    }
+  }
+
   .menu-btn {
     display: block;
     position: relative;
@@ -2660,6 +2670,7 @@
     padding: 0 1px 0 0;
     border: 2px solid #fff;
     border-radius: 0;
+    
     &:focus {
       border: 2px solid #ef4838;
     }
