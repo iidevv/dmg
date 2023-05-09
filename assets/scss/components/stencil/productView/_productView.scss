@@ -66,6 +66,8 @@
     margin: 0;
     font-size: 0;
     text-align: center;
+    overflow: hidden;
+    max-height: 500px;
     .slick-arrow {
         fill: stencilColor("icon-color");
     }

@@ -57,16 +57,19 @@ h6 {
   font-weight: 700;
 }
 
-body #product_list ul.productGrid h4.card-title, #product_list ul.productGrid li.product article.card h4 > a {
+body #product_list ul.productGrid h4.card-title,
+#product_list ul.productGrid li.product article.card h4 > a {
   height: 44px !important;
   overflow: hidden !important;
 }
-body .custom-product-filters input[type="checkbox"], .custom-product-filters input[type="radio"] {
+body .custom-product-filters input[type="checkbox"],
+.custom-product-filters input[type="radio"] {
   width: auto;
   margin: 5px 5px 0 0;
 }
 
-body .custom-product-filters .accordion-content li.navList-item > input, .custom-product-filters .accordion-content li.navList-item > label {
+body .custom-product-filters .accordion-content li.navList-item > input,
+.custom-product-filters .accordion-content li.navList-item > label {
   max-width: 90%;
 }
 
@@ -225,6 +228,11 @@ body .custom-product-filters .accordion-content li.navList-item > input, .custom
 
 .dmg-subcategories {
   padding: 0 0 50px 0;
+  max-height: 220px;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    max-height: none;
+  }
 }
 
 .dmg-category {
@@ -470,6 +478,29 @@ body .custom-product-filters .accordion-content li.navList-item > input, .custom
   }
 }
 
+.socials-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.footer {
+  a,
+  p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 767px) {
   .dmg-subcategory .image {
     background: #fafafa;
@@ -497,6 +528,12 @@ body .custom-product-filters .accordion-content li.navList-item > input, .custom
   .slick-dots li button {
     width: 16px;
     height: 16px;
+  }
+  .heroCarousel-action {
+    display: inline;
+  }
+  .heroCarousel-content {
+    top: 84%;
   }
 }
 
@@ -581,4 +618,20 @@ body .custom-product-filters .accordion-content li.navList-item > input, .custom
 .sd-product-set__arrow--right,
 .sd-product-set__arrow--left {
   background: $primary !important;
+}
+
+#dmg-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+}
+
+.dmg-products__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

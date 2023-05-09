@@ -39,14 +39,20 @@ dots=theme_settings.homepage_show_carousel_dots}}
     <div class="search-by-vehicle padding-bottom-50" id="search-by-vehicle">
         <div class="container">
             <h2 class="page-heading">Shop by vehicle</h2>
-            <div id="ymm-container"></div>
+            <!-- <div id="ymm-container"></div> -->
+            <div id="ymm-search"></div>
         </div>
     </div>
     {{#if products.new}}
-    <div class="dmg-products">
+    <div class="dmg-products padding-bottom-50">
         <div class="container">
             <h2 class="page-heading">DMG - Warehouse</h2>
-                {{{region name="below_ymm"}}}
+            <div class="dmg-products__wrapper">
+                <div id="dmg-products"></div>
+                <a class="button button--primary" href="/warehouse/">
+                    All DMG Products
+                </a>
+            </div>
         </div>
     </div>
     <div class="dmg-products dmg-products-dark-bg">
@@ -63,39 +69,57 @@ dots=theme_settings.homepage_show_carousel_dots}}
             <div class="dmg-categories__inner">
                 <a href="/motorcycle-helmets/" class="dmg-category">
                     <h3>Helmets</h3>
-                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                    <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/helmets-category.jpg"
                         alt="helmets" />
                 </a>
-                <a href="/dmg-warehouse-jackets/" class="dmg-category">
+                <a href="/motorcycle-jackets/" class="dmg-category">
                     <h3>Jackets</h3>
-                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                    <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/jackets.jpg"
                         alt="jackets" />
                 </a>
-                <a href="/dmg-warehouse-pants/" class="dmg-category">
+                <a href="/motorcycle-pants/" class="dmg-category">
                     <h3>Pants</h3>
-                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                    <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/pants.jpg"
                         alt="pants" />
                 </a>
                 <a href="/motorcycle-boots-and-shoes/" class="dmg-category">
                     <h3>Boots</h3>
-                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                    <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/boots.jpg"
                         alt="boots" />
                 </a>
-                <a href="/dmg-warehouse-gloves/" class="dmg-category">
+                <a href="/motorcycle-gloves/" class="dmg-category">
                     <h3>Gloves</h3>
-                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                    <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/gloves.jpg"
                         alt="gloves" />
                 </a>
                 <a href="/warehouse-luggage-dmg/" class="dmg-category">
                     <h3>Luggage</h3>
-                    <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
+                    <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
                         data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/luggage.jpg"
                         alt="luggage" />
+                </a>
+                <a href="/accessories/" class="dmg-category">
+                    <h3>Accessories</h3>
+                    <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
+                        data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/accessories.jpeg"
+                        alt="accessories" />
+                </a>
+                <a href="/parts/" class="dmg-category">
+                    <h3>Parts</h3>
+                    <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
+                        data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/parts.jpeg"
+                        alt="parts" />
+                </a>
+                <a href="/tires/" class="dmg-category">
+                    <h3>Tires</h3>
+                    <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
+                        data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/tires.jpeg"
+                        alt="tires" />
                 </a>
             </div>
         </div>
@@ -108,9 +132,9 @@ dots=theme_settings.homepage_show_carousel_dots}}
                 {{> components/products/carousel products=products.featured arrows=true}}
             </div>
         </div>
-        <img class="lazyload" src="http://caros-demo.mybigcommerce.com/content/loading.svg"
-                data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/featured.jpeg?t=1675409372&_gl=1*13jvt6x*_ga*MTg4ODgxODc0Ni4xNjc0Njk3NDIz*_ga_WS2VZYPC6G*MTY3NTQwODI3Ny4yMi4xLjE2NzU0MDkzNzUuMzAuMC4w"
-                alt="luggage" />
+        <img class="lazyload" src="https://caros-demo.mybigcommerce.com/content/loading.svg"
+            data-src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/featured.jpeg?t=1675409372&_gl=1*13jvt6x*_ga*MTg4ODgxODc0Ni4xNjc0Njk3NDIz*_ga_WS2VZYPC6G*MTY3NTQwODI3Ny4yMi4xLjE2NzU0MDkzNzUuMzAuMC4w"
+            alt="luggage" />
         <span class="dmg-decor-bottom"></span>
     </div>
     {{/if}}
