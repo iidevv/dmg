@@ -635,3 +635,50 @@ body .custom-product-filters .accordion-content li.navList-item > input,
   flex-direction: column;
   align-items: center;
 }
+
+#ymm-search #fitment-form {
+  background: #333;
+  color: #fff;
+  padding: 30px 15px;
+}
+
+#ymm-search .form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+#ymm-search select {
+  border-radius: 0;
+  font-size: 16px;
+}
+
+#ymm-search .form-group {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+}
+
+#ymm-search .modal-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#vehicle-title {
+  display: none;
+  color: #fff;
+}
+
+#ymm-search-btn {
+  display: none;
+  margin-bottom: 15px;
+}
