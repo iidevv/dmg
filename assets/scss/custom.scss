@@ -682,3 +682,28 @@ body .custom-product-filters .accordion-content li.navList-item > input,
   display: none;
   margin-bottom: 15px;
 }
+
+#ymm-search-input {
+  padding: 10px 15px;
+  border: 1px solid #ef4838;
+  background: #fff;
+  border-radius: 0;
+  margin: 0 0 50px;
+  width: 50%;
+  @media (max-width: 767px) {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+}
+
+#ymm-results {
+  .card-sku {
+    margin: 0 0 5px;
+  }
+  h4 {
+    margin-top: 0;
+  }
+  .pagination-list {
+    display: block !important;
+  }
+}
