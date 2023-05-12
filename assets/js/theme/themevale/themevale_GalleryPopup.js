@@ -53,7 +53,7 @@ export default function(context, $gallery) {
                 else
                 {
                     if(!ops.type)ops.type='image';
-                    if(ops.type='image')
+                    if(ops.type == 'image')
                     {
                         ops.u_content="<img src='"+ops.url+"'>";
                     }
@@ -116,7 +116,7 @@ export default function(context, $gallery) {
             }
             function aview(pp)
             {
-                return "<li><span class='thumbbsd' data='"+pp.stt+"'>"+pp.u_thumbnail+"</span></li>";
+                return "<li><span class='thumbbsd' data='"+pp.stt+"'><img src='"+pp.url+"'/></span></li>";
             }
             function draw_slide()
             {
