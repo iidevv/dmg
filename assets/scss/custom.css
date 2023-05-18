@@ -394,7 +394,7 @@ h6 {
     width: 0;
   }
   .departments__megamenu-inner {
-    overflow-x: auto;
+    overflow-x: hidden;
     height: 90vh;
   }
   .departments__megamenu-inner .megamenu__image {

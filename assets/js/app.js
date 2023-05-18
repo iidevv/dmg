@@ -240,15 +240,16 @@ $(function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   // scroll menu
-  const menuBlock = document.querySelector(".header"),
-    body = document.querySelector("body");
+  const menuBlock = document.querySelector(".header");
+  const  body = document.querySelector("body");
+  const megaMenu = document.querySelector(".departments");
   let menuBlockHeight = menuBlock.offsetHeight;
 
   window.addEventListener("scroll", function () {
-    if (window.pageYOffset >= 300) {
+    if (window.pageYOffset >= 300 && !megaMenu.classList.contains('departments--open')) {
       menuBlock.classList.add("header--fixed");
       body.style.marginTop = `${menuBlockHeight}px`;
-    } else if (window.pageYOffset < 300) {
+    } else if (window.pageYOffset < 300 && !megaMenu.classList.contains('departments--open')) {
       menuBlock.classList.remove("header--fixed");
       body.style.marginTop = 0;
     }
