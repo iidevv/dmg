@@ -501,9 +501,30 @@ body .custom-product-filters .accordion-content li.navList-item > input,
   }
 }
 
+.themevale_Mobile.themevale_MobileSidebar {
+  z-index: 9999;
+}
+
 @media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  .form-input,
+  .tab-content {
+    font-size: 16px;
+  }
+  .themevale_productDescription .page-heading {
+    font-size: 24px;
+  }
+  .tab-content h6 {
+    font-size: 20px;
+  }
   .dmg-subcategory .image {
     background: #fafafa;
+  }
+  .themevale_productDescription .productView-description .tab-content {
+    background: #fff;
+    padding: 30px 15px;
   }
   .dmg-subcategory img {
     height: 90px;
