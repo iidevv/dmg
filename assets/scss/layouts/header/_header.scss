@@ -2700,7 +2700,7 @@ ul.socials-list--menu,
   }
 
   .departments__list {
-    background: #333;
+    width: 100%;
   }
 
   .menu__inner {
@@ -2786,6 +2786,8 @@ ul.socials-list--menu,
   }
   .departments__body {
     box-shadow: none;
+    background: transparent;
+    width: 100%;
   }
   .departments__button {
     padding: 0 11px;
