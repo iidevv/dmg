@@ -241,15 +241,21 @@ $(function () {
 document.addEventListener("DOMContentLoaded", () => {
   // scroll menu
   const menuBlock = document.querySelector(".header");
-  const  body = document.querySelector("body");
+  const body = document.querySelector("body");
   const megaMenu = document.querySelector(".departments");
   let menuBlockHeight = menuBlock.offsetHeight;
 
   window.addEventListener("scroll", function () {
-    if (window.pageYOffset >= 300 && !megaMenu.classList.contains('departments--open')) {
+    if (
+      window.pageYOffset >= 300 &&
+      !megaMenu.classList.contains("departments--open")
+    ) {
       menuBlock.classList.add("header--fixed");
       body.style.marginTop = `${menuBlockHeight}px`;
-    } else if (window.pageYOffset < 300 && !megaMenu.classList.contains('departments--open')) {
+    } else if (
+      window.pageYOffset < 300 &&
+      !megaMenu.classList.contains("departments--open")
+    ) {
       menuBlock.classList.remove("header--fixed");
       body.style.marginTop = 0;
     }
@@ -295,25 +301,101 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const subCategories = document.querySelectorAll('.dmg-subcategories__list a');
-  const subCategoriesBtn = document.querySelector('.dmg-subcategories__btn');
+  const subCategories = document.querySelectorAll(".dmg-subcategories__list a");
+  const subCategoriesBtn = document.querySelector(".dmg-subcategories__btn");
   if (subCategories[0]) {
-      if(subCategories.length > 6) {
-        for (let i = 6; i < subCategories.length; i++) {
-          subCategories[i].style.display = 'none';
-        }
-        subCategoriesBtn.addEventListener('click', () => {
-
-          subCategoriesBtn.style.display = "none";
-
-          for (let i = 6; i < subCategories.length; i++) {
-            subCategories[i].style.height = '0px';
-            subCategories[i].style.display = 'block';
-            subCategories[i].style.height = subCategories[i].scrollHeight+"px";
-          }
-        });
-      } else {
-        subCategoriesBtn.style.display = "none";
+    if (subCategories.length > 6) {
+      for (let i = 6; i < subCategories.length; i++) {
+        subCategories[i].style.display = "none";
       }
-   }
+      subCategoriesBtn.addEventListener("click", () => {
+        subCategoriesBtn.style.display = "none";
+
+        for (let i = 6; i < subCategories.length; i++) {
+          subCategories[i].style.height = "0px";
+          subCategories[i].style.display = "block";
+          subCategories[i].style.height = subCategories[i].scrollHeight + "px";
+        }
+      });
+    } else {
+      subCategoriesBtn.style.display = "none";
+    }
+  }
+
+  // sort product variants
+  const optionsContainer = document.querySelector(
+    '.form-field[data-product-attribute="set-rectangle"]'
+  );
+  if (optionsContainer) {
+    const options = Array.from(
+      optionsContainer.getElementsByClassName("form-option-wrapper")
+    );
+
+    const sizeOrder = {
+      xs: 0,
+      xsmall: 0,
+      extrasmall: 0,
+      s: 1,
+      sm: 1,
+      small: 1,
+      m: 2,
+      md: 2,
+      med: 2,
+      medium: 2,
+      l: 3,
+      lg: 3,
+      large: 3,
+      xl: 4,
+      xlarge: 4,
+      extralarge: 4,
+      "2x": 5,
+      "2xl": 5,
+      xxl: 5,
+      doublexl: 5,
+      "3x": 6,
+      "3xl": 6,
+      xxxl: 6,
+      triplexl: 6,
+      "4x": 7,
+      "4xl": 7,
+      "5x": 8,
+      "5xl": 8,
+    };
+
+    options.sort(function (a, b) {
+      const aLength = a.textContent.trim().split(" ").length;
+      const bLength = b.textContent.trim().split(" ").length;
+      let aColor = "";
+      let bColor = "";
+      let aSize = a.textContent.trim().split(" ").slice(-1).pop().toLowerCase();
+      let bSize = b.textContent.trim().split(" ").slice(-1).pop().toLowerCase();
+
+      if (aLength > 1 && bLength > 1) {
+        aColor = a.textContent
+          .trim()
+          .slice(0, a.textContent.trim().lastIndexOf(" "))
+          .toLowerCase();
+        bColor = b.textContent
+          .trim()
+          .slice(0, b.textContent.trim().lastIndexOf(" "))
+          .toLowerCase();
+      }
+      if (Number(aSize) && Number(bSize)) {
+        aSize = +aSize;
+        bSize = +bSize;
+      }
+
+      if (Number(aSize) && Number(bSize) && aColor === bColor) {
+        return aSize - bSize;
+      } else if (aColor === bColor) {
+        return sizeOrder[aSize] - sizeOrder[bSize];
+      }
+
+      return aColor.localeCompare(bColor);
+    });
+
+    options.forEach(function (option) {
+      optionsContainer.appendChild(option);
+    });
+  }
 });

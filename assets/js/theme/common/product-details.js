@@ -189,7 +189,8 @@ export default class ProductDetails {
             }
         });
 
-        let productVariant = unsatisfiedRequiredFields.length === 0 ? options.sort().join(', ') : 'unsatisfied';
+        // let productVariant = unsatisfiedRequiredFields.length === 0 ? options.sort().join(', ') : 'unsatisfied';
+        let productVariant = unsatisfiedRequiredFields.length === 0 ? options.join(', ') : 'unsatisfied';
         const view = $('.productView');
 
         if (productVariant) {

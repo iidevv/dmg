@@ -27,8 +27,8 @@
         }
     ]}'>
     {{#each products}}
-    <div class="productCarousel-slide">
-        {{> components/products/card-new products=../products theme_settings=../theme_settings customer=../customer show_rating=../settings.show_product_rating show_wishlist=../settings.show_wishlist show_compare=true event="list" position=(add @index 1)}}
-    </div>
+        <div class="productCarousel-slide">
+            {{> components/products/card-new products=../products theme_settings=../theme_settings customer=../customer show_rating=../settings.show_product_rating show_wishlist=../settings.show_wishlist show_compare=true event="list" position=(add @index 1)}}
+        </div>
     {{/each}}
 </div>

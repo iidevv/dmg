@@ -1,4 +1,4 @@
-<div class="productView themevale_productView" {{#if settings.data_tag_enabled}} data-event-type="product" data-entity-id="{{product.id}}" data-name="{{product.title}}" data-product-category="{{#each product.category}}{{#if @last}}{{this}}{{else}}{{this}}, {{/if}}{{/each}}" data-product-brand="{{product.brand.name}}" data-product-price="{{#if product.price.with_tax}}{{product.price.with_tax.value}}{{else}}{{product.price.without_tax.value}}{{/if}}" data-product-variant="single-product-option"{{/if}}>
+<div class="productView themevale_productView layout-2" {{#if settings.data_tag_enabled}} data-event-type="product" data-entity-id="{{product.id}}" data-name="{{product.title}}" data-product-category="{{#each product.category}}{{#if @last}}{{this}}{{else}}{{this}}, {{/if}}{{/each}}" data-product-brand="{{product.brand.name}}" data-product-price="{{#if product.price.with_tax}}{{product.price.with_tax.value}}{{else}}{{product.price.without_tax.value}}{{/if}}" data-product-variant="single-product-option"{{/if}}>
     {{#each product.reviews.messages}}
         {{#if error}}
             {{> components/common/alert-error error}}
@@ -8,15 +8,11 @@
         {{/if}}
     {{/each}}
     <div class="themevale_productView-left">
-        <div class="productView-images">
+        <div class="themevale_productView-images zoom-image" data-image-gallery>
+            {{#if product.main_image}}
+                <meta itemprop="name" content="{{product.main_image.data}}" />
+            {{/if}}
             <div class="themevale_badges">
-                {{#each products.new}}
-                    {{#if this.id '==' ../product.id}}
-                    <div class="new-badge themevale_badge">
-                        <span class="text">{{lang 'products.badges.new'}}</span>
-                    </div>
-                    {{/if}}
-                {{/each}}
                 {{#or product.price.non_sale_price_with_tax product.price.non_sale_price_without_tax}}
                     <div class="sale-badge themevale_badge">
                         <span class="text">{{lang 'products.badges.sale'}}</span>
@@ -35,100 +31,96 @@
                     </div>
                 {{/if}}
             </div>
-            <div class="themevale_productViewImage zoom-image" data-image-gallery>
-                <figure class="productView-image" data-image-gallery-main {{#if product.main_image}}data-zoom-image="{{getImage product.main_image 'zoom_size' (cdn theme_settings.default_image_product)}}"{{/if}}>
-                    <div class="productView-img-container">
-                        {{#if product.main_image}}
-                            <a href="{{getImage product.main_image 'zoom_size' (cdn theme_settings.default_image_product)}}" data-reveal-id="video-gallery-pc-popup">
-                        {{/if}}
-                            <img class="productView-image--default lazyload"
-                                 data-sizes="auto"
-                                 src="{{cdn 'img/loading.svg'}}"
-                                 data-src="{{getImage product.main_image 'product_size' (cdn theme_settings.default_image_product)}}"
-                                 alt="{{product.main_image.alt}}" title="{{product.main_image.alt}}" data-main-image>
-                        {{#if product.main_image}}
-                            </a>
-                        {{/if}}
-                    </div>
-                    <div class="hover-to-zoom">
-                        <svg class="icon"><use xlink:href="#icon-search"></use></svg>
-                        <span class="text">{{lang 'products.click_zoom'}}</span>
-                    </div>
-                </figure>
-                <ul class="productView-thumbnails">
+            <div class="productView-nav-wrapper">
+                <div class="productView-nav" data-slick='{
+                    "fade": true,
+                    "arrows": false,
+                    "dots": false,
+                    "infinite": true,
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1,
+                    "asNavFor": ".themevale_productView-images .productView-for"
+                }'>
                     {{#each product.images}}
-                        <li class="productView-thumbnail">
-                            <a
-                                class="productView-thumbnail-link"
-                                href="{{getImage this 'product_size' (cdn ../theme_settings.default_image_product)}}"
-                                data-reveal-id="video-gallery-pc-popup"
-                                data-image-gallery-item
-                                data-image-gallery-new-image-url="{{getImage this 'product_size' (cdn ../theme_settings.default_image_product)}}"
-                                data-image-gallery-zoom-image-url="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}">
-                                <img class="lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage this 'productview_thumb_size' (cdn ../theme_settings.default_image_product)}}" alt="{{this.alt}}" title="{{this.alt}}">
-                            </a>
-                        </li>
-                    {{/each}}
-                    {{#if product.videos}}
-                        <li class="productView-thumbnail-custom">
-                            <a class="video-link" href="javascript:void(0)" data-reveal-id="video-gallery-pc-popup" data-video-icon>
-                                <span class="icon"><img src="/product_images/uploaded_images/{{theme_settings.product_video-image}}" alt=""></span>
-                                <span class="text">{{theme_settings.product_video-text}}</span>
-                            </a>
-                        </li>
-                    {{/if}}
-                    {{> components/themevale/product/customfields-instruction-warranty}}
-                </ul>
-            </div>
-            <div class="themevale_productViewImage themevale_productViewImage-mobile" data-image-gallery-mobile>
-                <div class="productView-image-mobile">
-                    {{#each product.images}}
-                        <figure class="productView-image"
-                            data-image-gallery-main data-fancybox="images" href="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}
-                            data-zoom-image="{{getImage this 'zoom_size' (cdn theme_settings.default_image_product)}}">
+                        <figure class="productView-image" data-fancybox="images" href="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}" 
+                            data-image-gallery-main
+                            data-zoom-image="{{getImage this 'zoom_size' (cdn theme_settings.default_image_product)}}"
+                            data-mfp-src="{{getImage this 'zoom_size' (cdn theme_settings.default_image_product)}}">
                             <div class="productView-img-container">
-                                <a href="{{getImage this 'zoom_size' (cdn theme_settings.default_image_product)}}">
-                                    <img class="productView-image--default lazyload"
-                                        data-sizes="auto"
-                                        src="{{cdn 'img/loading.svg'}}"
-                                        data-src="{{getImage this 'product_size' (cdn theme_settings.default_image_product)}}"
+                                <a href="{{getImage product.main_image 'zoom_size' (cdn theme_settings.default_image_product)}}">
+                                    <img class="productView-image--default"
+                                        data-sizes="auto" src="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}"
                                         alt="{{product.main_image.alt}}" title="{{product.main_image.alt}}" data-main-image>
                                 </a>
                             </div>
                         </figure>
                     {{/each}}
                 </div>
-                <ul class="productView-thumbnails-mobile">
-                    {{#if product.videos.list.length}}
-                        <li class="productView-thumbnail-custom">
-                            <a class="video-link" href="javascript:void(0);" data-reveal-id="video-gallery-popup">
-                                <span class="icon"><img class="lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="/product_images/uploaded_images/{{theme_settings.product_video-image}}" alt=""></span>
-                                <span class="text">{{theme_settings.product_video-text}}</span>
-                            </a>
-                            {{> components/themevale/product/video-gallery product.videos}}
-                        </li>
-                    {{/if}}
-                    {{> components/themevale/product/customfields-instruction-warranty}}
-                </ul>
-            </div>
-            <div class="themevale_ask-an-experts">
-                <div class="contact">
-                    <div class="content-contact">
-                        <p class="text">{{theme_settings.products_contact-questions}}</p>
-                        <div class="link">
-                            <a class="number-phone" href="tel:{{theme_settings.products_contact-phone}}">{{theme_settings.products_contact-phone}}</a>
-                            <a href="#" data-reveal-id="ask-an-expert">
-                                {{theme_settings.products_contact-ask-experts}}
-                                <svg class="icon"><use xlink:href="#icon-slick-next"></use></svg>
-                            </a>
-                        </div>
+                {{#if product.videos.list.length}}
+                    <div class="label-videos">
+                        <a class="video-link" href="javascript:void(0);" data-reveal-id="video-gallery-popup">
+                            <img class="icon" src="https://cdn11.bigcommerce.com/s-3tntjfynbx/product_images/uploaded_images/btn-play.png" alt=""></span>
+                        </a>
+                        {{> components/themevale/modals/video-gallery product.videos}}
                     </div>
+                {{/if}}
+                <div class="hover-to-zoom">
+                    <svg class="icon"><use xlink:href="#icon-search"></use></svg>
+                    <span class="text">{{lang 'products.click_zoom'}}</span>
                 </div>
             </div>
+            <div class="productView-for" data-slick='{
+                "arrows": true,
+                "dots": false,
+                "infinite": true,
+                "focusOnSelect": true,
+                "slidesToShow": 4,
+                "slidesToScroll": 1,
+                "asNavFor": ".themevale_productView-images .productView-nav",
+                "nextArrow": "<svg class=&apos;slick-next slick-arrow&apos;><use xlink:href=&apos;#icon-slick-next&apos;></use></svg>", 
+                "prevArrow": "<svg class=&apos;slick-prev slick-arrow&apos;><use xlink:href=&apos;#icon-slick-prev&apos;></use></svg>",
+                "responsive": [
+                    {
+                        "breakpoint": 1025,
+                        "settings": {
+                            "slidesToShow": 4,
+                            "slidesToScroll": 1
+                        }
+                    },
+                    {
+                        "breakpoint": 415,
+                        "settings": {
+                            "slidesToShow": 4,
+                            "slidesToScroll": 1
+                        }
+                    },
+                    {
+                        "breakpoint": 321,
+                        "settings": {
+                            "slidesToShow": 3,
+                            "slidesToScroll": 1
+                        }
+                    }
+                ]
+            }'>
+                {{#each product.images}}
+                    <div class="productView-thumbnail">
+                        <a
+                            class="productView-thumbnail-link"
+                            href="{{getImage this 'product_size' (cdn ../theme_settings.default_image_product)}}"
+                            data-image-gallery-item
+                            data-image-gallery-new-image-url="{{getImage this 'product_size' (cdn ../theme_settings.default_image_product)}}"
+                            data-image-gallery-zoom-image-url="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}">
+                            <img class="lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage this 'productthumb_size' (cdn ../theme_settings.default_image_product)}}" alt="{{this.alt}}" title="{{this.alt}}">
+                        </a>
+                    </div>
+                {{/each}}
+            </div>
+            
+            
         </div>
     </div>
     <div class="themevale_productView-right">
-        <div id="ymm_compatibility_chart"  data-product-id="{{product.id}}"></div>
         <div class="productView-details">
             <div class="productView-product">
                 {{#if product.brand}}
@@ -309,18 +301,29 @@
                         </div>
                     {{/if}}
                 </form>
-                {{#unless product.can_purchase}}
-                <div class="mb-lg-60"></div>
-                {{/unless}}
                 {{#if settings.show_wishlist}}
                     {{> components/common/wishlist-dropdown}}
                 {{/if}}
             </div>
             {{#if theme_settings.product_viewingProduct}}
-                <div class="viewing-product">
+                <div class="viewing-product google-viewing">
                     <svg class="icon"><use xlink:href="#icon-eye"></use></svg>5 customers are viewing this product
                 </div>
             {{/if}}
+            <div class="themevale_ask-an-experts">
+                <div class="contact">
+                    <div class="content-contact">
+                        <p class="text">{{theme_settings.products_contact-questions}}</p>
+                        <div class="link">
+                            <a class="number-phone" href="tel:{{theme_settings.products_contact-phone}}">{{theme_settings.products_contact-phone}}</a>
+                            <a href="#" data-reveal-id="ask-an-expert">
+                                {{theme_settings.products_contact-ask-experts}}
+                                <svg class="icon"><use xlink:href="#icon-slick-next"></use></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {{> components/common/share}}
             {{> components/themevale/product/security-image}}
             {{{snippet 'product_details'}}}
@@ -333,7 +336,6 @@
     {{/if}}
 </div>
 
-{{> components/themevale/product/video-gallery-pc product.videos}}
 <div id="previewModal" class="modal" data-reveal>
     <a href="#" class="modal-close" aria-label="{{lang 'common.close'}}" role="button">
         <span aria-hidden="true">&#215;</span>

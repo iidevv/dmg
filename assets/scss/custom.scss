@@ -388,6 +388,10 @@ body .custom-product-filters .accordion-content li.navList-item > input,
   }
 }
 
+.form-option-wrapper {
+  display: inline-block;
+}
+
 .search-by-vehicle {
   .page-heading {
     text-align: center;
@@ -791,6 +795,21 @@ body .custom-product-filters .accordion-content li.navList-item > input,
   .pagination-list {
     display: block !important;
   }
+}
+
+.megamenu__links > .megamenu-links__item:not(.megamenu-links__item--has-submenu):not(:last-child) {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+}
+
+.affirm-modal-trigger {
+  color: #ef4838;
+  text-decoration: underline;
+}
+
+.productView-image > img {
+  background: #fff;
 }
 
 .warning-message {

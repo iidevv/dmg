@@ -3,9 +3,9 @@
     {{#or (if page_type '===' 'default') (if page_type '===' 'page_contact_form') (if page_type '===' 'category')}}
         {{#block "page"}} {{/block}}
     {{else}}
-        <div class="container">
+        <main class="container">
             {{#block "page"}} {{/block}}
-        </div>
+        </main>
     {{/or}}
     {{> components/common/modal}}
     {{> components/common/alert-modal}}

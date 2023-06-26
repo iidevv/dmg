@@ -96,12 +96,11 @@
         }
 
         .hover-to-zoom {
+            display: none;
             position: absolute;
             bottom: 0;
             left: 50%;
-            background-color: transparent;
             transform: translateX(-50%);
-            width: 100%;
         }
 
         .themevale_ask-an-experts {
@@ -139,11 +138,11 @@
 
     @media (min-width: 1025px) {
         .themevale_productView-left {
-            width: 60%
+            width: 50%
         }
 
         .themevale_productView-right {
-            width: 40%;
+            width: 50%;
         }
 
         .label-videos {
@@ -410,7 +409,9 @@
                     padding: 0 12px;
                     border-radius: 50%;
                     border: 1px solid #cdd0d7;
-                    margin-bottom: 10px;
+                    @media(max-width: 767px) {
+                        margin-bottom: 15px;
+                    }
                 }
 
                 svg {
@@ -447,9 +448,6 @@
             }
             .icons .icon {
                 margin-bottom: 0;
-            }
-            .content {
-                padding-top: 8px;
             }
             .item {
                 padding: 0;
@@ -565,7 +563,8 @@
         }
 
         >.productView-image {
-            width: 68%;
+            width: 88%;
+            margin: 5px 0;
             vertical-align: top;
             display: inline-block;
 
@@ -670,14 +669,11 @@
 
 .hover-to-zoom {
     z-index: 5;
-    padding: 10px;
-    display: none;
+    
     font-size: $body-fontSize;
     text-align: center;
     position: relative;
     color: #8c8c8c;
-    background-color: #ffffff;
-
     .icon {
         fill: #8c8c8c;
         margin-right: 3px;
@@ -700,9 +696,9 @@
     }
 
     .productView-brand {
-        font-size: 13px;
+        font-size: 16px;
         line-height: 1;
-        margin-bottom: 12px;
+        margin: 5px 0 15px;
         font-weight: 400;
         text-transform: capitalize;
         font-family: $fontFamily-sans;
@@ -714,7 +710,7 @@
     }
 
     .productView-title {
-        font-size: 16px;
+        font-size: 24px;
         line-height: 1.5;
         margin: 0 0 13px 0;
         font-weight: 700;
@@ -1642,7 +1638,7 @@
     }
 
     .toggle-content {
-        padding: 10px 0;
+        padding: 10px 0 20px;
     }
 
     &.toggle:last-of-type {
@@ -1820,6 +1816,7 @@
             height: 100%;
             position: absolute;
             transform: translateX(-50%);
+            object-fit: contain;
         }
         img[role="presentation"] {
             background: #fff;

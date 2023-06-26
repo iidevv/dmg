@@ -2,20 +2,18 @@
     <ul class="productList" {{#if settings.data_tag_enabled}} data-list-name="Quick Search Results" {{/if}}>
         {{#each product_results.products}}
         <li class="product">
-            <article class="card">
+            <a class="card" href="{{url}}">
                 <figure class="card-figure">
-                    <a class="card-link" href="{{url}}">
-                        <div class="card-img-container">
-                            <img class="card-image lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage image 'productthumb_size' (cdn theme_settings.default_image_product)}}" alt="{{image.alt}}" title="{{image.alt}}">
-                        </div>
-                    </a>
+                    <div class="card-img-container">
+                        <img class="card-image lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage image 'productthumb_size' (cdn theme_settings.default_image_product)}}" alt="{{image.alt}}" title="{{image.alt}}">
+                    </div>
                 </figure>
                 <div class="card-body">
                     {{#if brand.name}}
                         <p class="card-brand" data-test-info-type="brandName">{{brand.name}}</p>
                     {{/if}}
                     <h4 class="card-title">
-                        <a href="{{url}}">{{name}}</a>
+                        {{name}}
                     </h4>
                     <div class="price-wrapper">
                         <div class="card-price" data-test-info-type="price">
@@ -32,7 +30,7 @@
                         </span>
                     </p>
                 </div>
-            </article>
+            </a>
         </li>
         {{/each}}
     </ul>
