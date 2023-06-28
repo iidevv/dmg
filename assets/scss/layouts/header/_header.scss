@@ -2678,6 +2678,7 @@ ul.socials-list--menu,
     
     svg {
       pointer-events: none;
+      z-index: -1;
       width: 36px;
       height: 36px;
     }
@@ -2716,7 +2717,7 @@ ul.socials-list--menu,
     z-index: 9999;
     background: #333;
     width: 320px;
-    transition: all 0.9s ease-in-out;
+    transition: all 0.6s ease-in-out;
     box-shadow: 0 0 8px 1px rgba(#000, 0.3);
   }
   .menu__inner.active {

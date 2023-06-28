@@ -26,21 +26,6 @@
         <div class="heroCarousel-slide {{#if ../theme_settings.homepage_stretch_carousel_images}}stretch{{/if}} {{#if @first}}heroCarousel-slide--first{{/if}}">
             <div class="heroCarousel-image-wrapper" {{#and image_height image_width}}style="height: {{multiply (divide image_height image_width) 100}}vw"{{/and}}>
                 <a class="link" href="{{url}}"></a>
-                {{#and (if @index '==' 0) ../theme_settings.homepage_images_mobile-0}}
-                    <img class="heroCarousel-image-mobile lazyload" src="{{cdn 'img/loading.svg'}}" data-src="/product_images/uploaded_images/{{../../theme_settings.homepage_images_mobile-0}}" alt="">
-                {{/and}}
-                {{#and (if @index '==' 1) ../theme_settings.homepage_images_mobile-1}}
-                    <img class="heroCarousel-image-mobile lazyload" src="{{cdn 'img/loading.svg'}}" data-src="/product_images/uploaded_images/{{../../theme_settings.homepage_images_mobile-1}}" alt="">
-                {{/and}}
-                {{#and (if @index '==' 2) ../theme_settings.homepage_images_mobile-2}}
-                    <img class="heroCarousel-image-mobile lazyload" src="{{cdn 'img/loading.svg'}}" data-src="/product_images/uploaded_images/{{../../theme_settings.homepage_images_mobile-2}}" alt="">
-                {{/and}}
-                {{#and (if @index '==' 3) ../theme_settings.homepage_images_mobile-3}}
-                    <img class="heroCarousel-image-mobile lazyload" src="{{cdn 'img/loading.svg'}}" data-src="/product_images/uploaded_images/{{../../theme_settings.homepage_images_mobile-3}}" alt="">
-                {{/and}}
-                {{#and (if @index '==' 4) ../theme_settings.homepage_images_mobile-4}}
-                    <img class="heroCarousel-image-mobile lazyload" src="{{cdn 'img/loading.svg'}}" data-src="/product_images/uploaded_images/{{../../theme_settings.homepage_images_mobile-4}}" alt="">
-                {{/and}}
                 <img class="heroCarousel-image" {{#if @first}}src{{else}}src="{{cdn 'img/loading.svg'}}" data-lazy{{/if}}="{{image}}" alt="{{alt_text}}" title="{{alt_text}}"
                 {{#if image_width}}width="{{image_width}}"{{/if}} {{#if image_height}}height="{{image_height}}"{{/if}} />
             </div>

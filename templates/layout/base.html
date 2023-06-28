@@ -15,6 +15,22 @@
         <script>
             // Change document class from no-js to js so we can detect this in css
             document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+            window.addEventListener('DOMContentLoaded', (event) => {
+                const isMobile = window.innerWidth <= 768;
+                if (isMobile) {
+                    const images = document.querySelectorAll('img');
+                    images.forEach((img) => {
+                        let originalSrc = img.src;
+                        let newSrc = originalSrc.replace('/original/', '/600w/');
+                        img.src = newSrc;
+                        let lazySrc = img.getAttribute('data-lazy');
+                        if (lazySrc) {
+                            let newLazySrc = lazySrc.replace('/original/', '/600w/');
+                            img.setAttribute('data-lazy', newLazySrc);
+                        }
+                    });
+                }
+            });
         </script>
 
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

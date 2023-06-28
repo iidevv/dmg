@@ -4,13 +4,13 @@
     <div class="header__topbar-start-bg"></div>
     <div class="header__topbar-start">
         <div class="topbar topbar--spaceship-start">
-            <a class="header__store-contact store-phone" href="tel:{{theme_settings.footer-middle-phone1}}">
+            <a aria-label="Call us at {{theme_settings.footer-middle-phone1}}" class="header__store-contact store-phone" href="tel:{{theme_settings.footer-middle-phone1}}">
                 <svg class="icon">
                     <use xlink:href="#icon-telephone-2"></use>
                 </svg>
                 <span>{{theme_settings.footer-middle-phone1}}</span>
             </a>
-            <a class="header__store-contact store-email" href="mailto:{{theme_settings.footer-middle-email}}">
+            <a aria-label="Mail us at: {{theme_settings.footer-middle-email}}" class="header__store-contact store-email" href="mailto:{{theme_settings.footer-middle-email}}">
                 <svg class="icon">
                     <use xlink:href="#icon-envelope-2"></use>
                 </svg>
@@ -21,14 +21,14 @@
     <div class="header__topbar-end-bg"></div>
     <div class="header__topbar-end">
         <div class="topbar topbar--spaceship-end">
-            <a class="topbar__wishlist" href="{{urls.account.wishlists.all}}">
+            <a aria-label="Add to wishlist" class="topbar__wishlist" href="{{urls.account.wishlists.all}}">
                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M9.78783 19.4059L7.83593 17.6238C5.83687 15.7944 4.03131 13.9791 2.41924 12.1776C0.806412 10.377 0 8.39227 0 6.22348C0 4.45073 0.594059 2.9703 1.78218 1.78218C2.9703 0.594059 4.45073 0 6.22348 0C7.22301 0 8.16596 0.211975 9.05233 0.635926C9.93871 1.06063 10.6931 1.64074 11.3154 2.37624C11.9378 1.64074 12.6921 1.06063 13.5785 0.635926C14.4649 0.211975 15.4078 0 16.4074 0C18.1801 0 19.6605 0.594059 20.8487 1.78218C22.0368 2.9703 22.6308 4.45073 22.6308 6.22348C22.6308 8.39227 21.8293 10.3819 20.2263 12.1924C18.6233 14.0028 16.8034 15.8227 14.7666 17.652L12.843 19.4059C12.4092 19.802 11.9 20 11.3154 20C10.7308 20 10.2216 19.802 9.78783 19.4059Z"
                         fill="white" />
                 </svg>
             </a>
-            <a class="topbar__address" target="_blank" href="https://goo.gl/maps/GG3Q3NpL1C2NU8FX8">
+            <a aria-label="Open on the map: 18001 Sky Park Cir, Irvine, CA 92614" class="topbar__address" target="_blank" href="https://goo.gl/maps/GG3Q3NpL1C2NU8FX8">
                 <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M7 9.5C6.33696 9.5 5.70107 9.23661 5.23223 8.76777C4.76339 8.29893 4.5 7.66304 4.5 7C4.5 6.33696 4.76339 5.70107 5.23223 5.23223C5.70107 4.76339 6.33696 4.5 7 4.5C7.66304 4.5 8.29893 4.76339 8.76777 5.23223C9.23661 5.70107 9.5 6.33696 9.5 7C9.5 7.3283 9.43534 7.65339 9.3097 7.95671C9.18406 8.26002 8.99991 8.53562 8.76777 8.76777C8.53562 8.99991 8.26002 9.18406 7.95671 9.3097C7.65339 9.43534 7.3283 9.5 7 9.5ZM7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0Z"
@@ -56,7 +56,7 @@
         <form class="mobile-search" action="/search.php">
             <input name="search_query" class="mobile-search__input" type="text"
                 placeholder="Enter Keyword or Part Number">
-            <button type="submit" class="mobile-search__submit">
+            <button aria-label="Search" type="submit" class="mobile-search__submit">
                 <svg width="20" height="20">
                     <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
 c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
@@ -65,7 +65,7 @@ c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z"></path>
             </button>
         </form>
         <div class="header__navbar-departments">
-            <div class="departments"><button class="departments__button" type="button"><span
+            <div class="departments"><button aria-label="Catalog" class="departments__button" type="button"><span
                         class="departments__button-icon"><svg width="16px" height="12px">
                             <path d="M0,7L0,5L16,5L16,7L0,7ZM0,0L16,0L16,2L0,2L0,0ZM12,12L0,12L0,10L12,10L12,12Z">
                             </path>
@@ -406,6 +406,12 @@ C-0.1,9.8-0.1,10.4,0.3,10.7z"></path>
                                                                     <a class="megamenu-links__item-link"
                                                                         href="/motorcycle-boots-and-shoes-closeouts/">
                                                                         Closeouts
+                                                                    </a>
+                                                                </li>
+                                                                <li class="megamenu-links__item">
+                                                                    <a class="megamenu-links__item-link"
+                                                                        href="/dmg-warehouse-boots-and-shoes/">
+                                                                        DMG Warehouse
                                                                     </a>
                                                                 </li>
                                                             </ul>
@@ -1441,6 +1447,12 @@ C-0.1,9.8-0.1,10.4,0.3,10.7z"></path>
                                                             </li>
                                                             <li class="megamenu-links__item">
                                                                 <a class="megamenu-links__item-link"
+                                                                    href="/dmg-warehouse-boots-and-shoes/">
+                                                                    Boots & Shoes
+                                                                </a>
+                                                            </li>
+                                                            <li class="megamenu-links__item">
+                                                                <a class="megamenu-links__item-link"
                                                                     href="/dmg-warehouse-womens-pants/">
                                                                     Women's Pants
                                                                 </a>
@@ -1516,7 +1528,7 @@ C-0.1,9.8-0.1,10.4,0.3,10.7z"></path>
         </div>
         <ul class="socials-list socials-list--menu">
             <li>
-                <a href="https://www.facebook.com/111351138160622" target="_blank" rel="noopener noreferrer">
+                <a aria-label="Facebook" href="https://www.facebook.com/111351138160622" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="currentColor" width="34px" height="34px">
                         <path fill-rule="evenodd"
                             d="M22 12.061C22 6.505 17.523 2 12 2S2 6.505 2 12.061c0 5.022 3.657 9.184 8.438 9.939v-7.03h-2.54v-2.91h2.54V9.845c0-2.522 1.492-3.915 3.777-3.915 1.094 0 2.238.197 2.238.197v2.476h-1.26c-1.243 0-1.63.775-1.63 1.57v1.888h2.773l-.443 2.908h-2.33V22c4.78-.755 8.437-4.917 8.437-9.939z">
@@ -1525,7 +1537,7 @@ C-0.1,9.8-0.1,10.4,0.3,10.7z"></path>
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com/discount_moto_gear" target="_blank" rel="noopener noreferrer">
+                <a aria-label="Instagram" href="https://www.instagram.com/discount_moto_gear" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="currentColor" width="34px" height="34px">
                         <path
                             d="M16.604 8.516c.13.35.198.719.203 1.091.033.622.033.811.033 2.386 0 1.574-.004 1.763-.033 2.385a3.273 3.273 0 0 1-.203 1.091 1.956 1.956 0 0 1-1.12 1.12c-.35.13-.719.198-1.091.204-.622.032-.811.032-2.386.032-1.574 0-1.763-.003-2.385-.032a3.273 3.273 0 0 1-1.091-.204 1.956 1.956 0 0 1-1.12-1.12 3.273 3.273 0 0 1-.204-1.09c-.032-.623-.032-.812-.032-2.386 0-1.575.003-1.764.032-2.386.006-.372.074-.741.204-1.09a1.956 1.956 0 0 1 1.12-1.12c.35-.13.718-.199 1.09-.204.623-.033.812-.033 2.386-.033 1.575 0 1.764.004 2.386.033.372.005.741.074 1.09.203.515.2.922.606 1.12 1.12zM12 15.033a3.033 3.033 0 1 0 0-6.066 3.033 3.033 0 0 0 0 6.066zm3.153-5.477a.71.71 0 1 0 0-1.418.71.71 0 0 0 0 1.418zM12 13.967a1.967 1.967 0 1 1 0-3.934 1.967 1.967 0 0 1 0 3.934zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10A10 10 0 0 0 12 2zm5.87 12.433c-.01.49-.102.974-.274 1.432a3.018 3.018 0 0 1-1.727 1.728 4.335 4.335 0 0 1-1.433.272c-.629.03-.829.037-2.432.037-1.604 0-1.819 0-2.433-.037a4.335 4.335 0 0 1-1.433-.272 3.018 3.018 0 0 1-1.727-1.728 4.335 4.335 0 0 1-.273-1.432c-.029-.63-.036-.83-.036-2.433 0-1.604 0-1.818.036-2.433.01-.49.102-.974.273-1.432a3.018 3.018 0 0 1 1.727-1.728 4.335 4.335 0 0 1 1.433-.272c.629-.03.829-.037 2.433-.037 1.603 0 1.818 0 2.432.037.49.009.974.101 1.433.272.794.307 1.42.934 1.727 1.728.172.458.264.943.273 1.432.03.63.036.83.036 2.433 0 1.604-.007 1.804-.036 2.433z">
@@ -1536,7 +1548,7 @@ C-0.1,9.8-0.1,10.4,0.3,10.7z"></path>
         </ul>
     </div>
     <div class="header__logo">
-        <a href="/" class="logo">
+        <a aria-label="Discount Moto Gear" href="/" class="logo">
             <svg class="logo__fixed" width="112" height="92" viewBox="0 0 112 92" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1847,7 +1859,7 @@ C-0.1,9.8-0.1,10.4,0.3,10.7z"></path>
     </div>
     <div class="header__indicators">
         <div class="indicator indicator--wishlist">
-            <a href="{{urls.account.wishlists.all}}" class="indicator__button">
+            <a aria-label="My Wishlist" href="{{urls.account.wishlists.all}}" class="indicator__button">
                 <span class="indicator__icon">
                     <svg width="32" height="32">
                         <path d="M23,4c3.9,0,7,3.1,7,7c0,6.3-11.4,15.9-14,16.9C13.4,26.9,2,17.3,2,11c0-3.9,3.1-7,7-7c2.1,0,4.1,1,5.4,2.6l1.6,2l1.6-2
@@ -1859,7 +1871,7 @@ z"></path>
         </div>
         <div class="indicator indicator--trigger--click">
             {{#if customer}}
-            <a href="{{urls.account.index}}" class="indicator__button">
+            <a aria-label="My account" href="{{urls.account.index}}" class="indicator__button">
                 <span class="indicator__icon">
                     <svg width="32" height="32">
                         <path d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7
@@ -1870,7 +1882,7 @@ C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6
                 <span class="indicator__value">My Account</span>
             </a>
             {{else}}
-            <a href="{{urls.auth.login}}" class="indicator__button">
+            <a aria-label="Login page" href="{{urls.auth.login}}" class="indicator__button">
                 <span class="indicator__icon">
                     <svg width="32" height="32">
                         <path d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7
@@ -1884,7 +1896,7 @@ C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6
         </div>
         <div class="indicator indicator--trigger--click">
             <div class="themevale_cart">
-                <a data-cart-preview data-options="align:right" href="{{urls.cart}}" class="indicator__button">
+                <a aria-label="My cart" data-cart-preview data-options="align:right" href="{{urls.cart}}" class="indicator__button">
                     <span class="indicator__icon"><svg width="32" height="32">
                             <circle cx="10.5" cy="27.5" r="2.5"></circle>
                             <circle cx="23.5" cy="27.5" r="2.5"></circle>
