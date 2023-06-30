@@ -55,7 +55,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="toggle-content" id="tabShipping-content" aria-hidden="false">
+                <div class="toggle-content" id="tabShipping-content">
                     {{> components/themevale/tabs/tab-shipping}}
                 </div>
             </div>
@@ -131,7 +131,7 @@
 {{#if product.related_products}}
 <div class="toggle productRelated" id="product-related" data-product-related>
     <div class="toggle-title">
-        <h4 class="page-heading">{{lang 'products.related_products'}}</h4>
+        <h3 class="page-heading">{{lang 'products.related_products'}}</h3>
     </div>
     <div class="toggle-content is-open" id="productRelated-content" aria-hidden="false">
         {{> components/products/related products=product.related_products theme_settings=theme_settings}}
@@ -145,7 +145,7 @@
 {{#if product.similar_by_views}}
 <div class="toggle productSimilar" id="product-similar" data-product-reviews>
     <div class="toggle-title">
-        <h4 class="page-heading">{{lang 'products.similar_by_views'}}</h4>
+        <h3 class="page-heading">{{lang 'products.similar_by_views'}}</h3>
     </div>
     <div class="toggle-content is-open" id="productSimilar-content" aria-hidden="false">
         {{> components/products/carousel products=product.similar_by_views theme_settings=theme_settings arrows=true}}

@@ -1,7 +1,7 @@
 {{#if reviews.total}}
 <div class="toggle productReviews" id="product-reviews" data-product-reviews>
     <div class="toggle-title">
-        <h4 class="page-heading">{{lang 'products.reviews.title'}}</h4>
+        <p class="page-heading">{{lang 'products.reviews.title'}}</p>
         <span class="number-review">{{lang 'products.reviews.header' total=reviews.total}}</span>
         <a class="write-review" href="{{product.url}}{{#if is_ajax}}#write_review{{/if}}"
            {{#unless is_ajax }}data-reveal-id="modal-review-form"{{/unless}}>

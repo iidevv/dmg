@@ -21,11 +21,16 @@
                     const images = document.querySelectorAll('img');
                     images.forEach((img) => {
                         let originalSrc = img.src;
-                        let newSrc = originalSrc.replace('/original/', '/600w/');
+                        let newSrc = originalSrc
+                            .replace('/original/', '/600w/')
+                            .replace('/1280x1280/', '/600w/');
                         img.src = newSrc;
+                        
                         let lazySrc = img.getAttribute('data-lazy');
                         if (lazySrc) {
-                            let newLazySrc = lazySrc.replace('/original/', '/600w/');
+                            let newLazySrc = lazySrc
+                                .replace('/original/', '/600w/')
+                                .replace('/1280x1280/', '/600w/');
                             img.setAttribute('data-lazy', newLazySrc);
                         }
                     });
@@ -55,7 +60,7 @@
         {{#if theme_settings.themevale_header-layout-1}}
             <div class="themevale_Mobile themevale_MobileMenu" id="menu-mobile">
                 <div class="themevale_close">
-                    <a href="javascript:void(0)" class="close">×</a>
+                    <a href="#" class="close">×</a>
                 </div>
                 <div class="navPages-container" id="menuMobile" data-menu>
                 </div>
@@ -63,7 +68,7 @@
         {{else}}
             <div class="themevale_Mobile themevale_MobileMenu" id="menu-mobile">
                 <div class="themevale_close">
-                    <a href="javascript:void(0)" class="close">×</a>
+                    <a href="#" class="close">×</a>
                 </div>
                 <div class="navPages-container" id="menuMobile" data-menu>
                     {{> components/themevale/header/navigation-mobile}}
@@ -75,7 +80,7 @@
         {{#if page_type '!==' 'login'}}
         <div class="themevale_Mobile themevale_MobileAccount" id="account-mobile">
             <div class="themevale_close2">
-                <a href="javascript:void(0)" class="close">
+                <a href="#" class="close">
                     <svg class="icon"><use xlink:href="#times"/></svg>
                     <span class="text">close</span>
                 </a>
@@ -89,7 +94,7 @@
         <!-- Cart mobile  -->
         <div class="themevale_Mobile themevale_MobileCart" id="cart-mobile">
             <div class="themevale_close2">
-                <a href="javascript:void(0)" class="close">
+                <a href="#" class="close">
                     <svg class="icon"><use xlink:href="#times"/></svg>
                     <span class="text">close</span>
                 </a>
@@ -105,7 +110,7 @@
         <!-- Sidebar mobile -->
         <div class="themevale_Mobile themevale_MobileSidebar" id="sidebar-mobile">
            <div class="themevale_close2">
-                <a href="javascript:void(0)" class="close">
+                <a href="#" class="close">
                     <svg class="icon"><use xlink:href="#times"/></svg>
                     <span class="text">close</span>
                 </a>

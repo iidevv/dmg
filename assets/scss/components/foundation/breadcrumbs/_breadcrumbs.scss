@@ -39,7 +39,7 @@
   padding: 0;
   a {
     display: block;
-    color: stencilColor("breadcrumb-color");
+    color: #fff;
     text-transform: capitalize;
     padding: 5px 15px;
     &:hover {
@@ -57,7 +57,7 @@
     transform: skewX(-30deg);
     pointer-events: auto;
     position: absolute;
-    background-color: #ebebeb;
+    background-color: #333;
     top: 0;
     bottom: 0;
     z-index: -1;
@@ -68,7 +68,7 @@
   &.is-active {
     > .breadcrumb-label {
       display: block;
-      color: stencilColor("breadcrumb-color");
+      color: #fff;
       cursor: text;
       padding: 5px 15px;
     }
@@ -84,7 +84,7 @@
   display: block;
   text-align: left;
   padding: 20px 0;
-  color: stencilColor("breadcrumb-color");
+  color: #fff;
   p {
     margin: 0;
   }

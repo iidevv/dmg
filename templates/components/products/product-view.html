@@ -47,10 +47,10 @@
                             data-zoom-image="{{getImage this 'zoom_size' (cdn theme_settings.default_image_product)}}"
                             data-mfp-src="{{getImage this 'zoom_size' (cdn theme_settings.default_image_product)}}">
                             <div class="productView-img-container">
-                                <a href="{{getImage product.main_image 'zoom_size' (cdn theme_settings.default_image_product)}}">
+                                <a aria-label="Product image" href="{{getImage product.main_image 'zoom_size' (cdn theme_settings.default_image_product)}}">
                                     <img class="productView-image--default"
                                         data-sizes="auto" src="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}"
-                                        alt="{{product.main_image.alt}}" title="{{product.main_image.alt}}" data-main-image>
+                                        alt="{{product.main_image.alt}}" title="{{product.main_image.alt}}" data-main-image alt="Product main image">
                                 </a>
                             </div>
                         </figure>

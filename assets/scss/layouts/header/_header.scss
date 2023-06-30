@@ -999,6 +999,15 @@
   line-height: 20px;
   font-weight: 500;
 }
+
+.departments__list > li:first-child {
+  margin-top: 10px;
+}
+
+.departments__list > li:last-child {
+  margin-bottom: 10px;
+}
+
 .departments__item-link {
   color: inherit;
   display: block;
@@ -1190,7 +1199,7 @@
 }
 
 .departments__item--parts-child {
-  &>.departments__item-link {
+  & > .departments__item-link {
     height: 0;
     padding: 0 29px 0 20px;
     overflow: hidden;
@@ -1198,13 +1207,11 @@
 }
 
 .departments__item--parts-main:hover .departments__item--parts-child {
-  &>.departments__item-link {
+  & > .departments__item-link {
     height: 34px;
     padding: 7px 29px 7px 20px;
   }
 }
-
-
 
 .dropcart {
   width: 320px;
@@ -2654,8 +2661,9 @@ ul.socials-list--menu,
   }
 
   .header {
-    a, button {
-      transition: all .15s ease-in-out;
+    a,
+    button {
+      transition: all 0.15s ease-in-out;
     }
     a:active,
     button:active {
@@ -2675,7 +2683,7 @@ ul.socials-list--menu,
     padding: 0 1px 0 0;
     border: 2px solid #fff;
     border-radius: 0;
-    
+
     svg {
       pointer-events: none;
       z-index: -1;
@@ -2742,7 +2750,7 @@ ul.socials-list--menu,
     }
   }
   .departments__arrow {
-     display: none;
+    display: none;
   }
 
   .departments__item-link,
@@ -2755,7 +2763,7 @@ ul.socials-list--menu,
 
   .departments__item-link:focus,
   .main-menu__link:focus,
-  .main-menu .main-menu__item:hover .main-menu__link  {
+  .main-menu .main-menu__item:hover .main-menu__link {
     background: transparent;
   }
 

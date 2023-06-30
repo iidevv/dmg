@@ -12,7 +12,7 @@
         {{#if product.related_products}}
             <div class="productRelated" id="product-related" data-product-related>
                 <div class="toggle-title">
-                    <h4 class="page-heading">{{lang 'products.related_products'}}</h4>
+                    <p class="page-heading">{{lang 'products.related_products'}}</p>
                 </div>
                 {{> components/themevale/product/related-2 products=product.related_products theme_settings=theme_settings}}
             </div>
@@ -20,7 +20,7 @@
         {{#if product.similar_by_views}}
             <div class="productSimilar" id="product-similar" data-product-reviews>
                 <div class="toggle-title">
-                    <h4 class="page-heading">{{lang 'products.similar_by_views'}}</h4>
+                    <p class="page-heading">{{lang 'products.similar_by_views'}}</p>
                 </div>
                 {{> components/themevale/product/similar-2 products=product.similar_by_views theme_settings=theme_settings}}
             </div>
