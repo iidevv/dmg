@@ -62,15 +62,17 @@
             <a href="{{url}}" {{#if settings.data_tag_enabled}} data-event-type="product-click" {{/if}}>{{name}}</a>
         </h4>
         <div class="card-wrapper">
-            {{#if show_rating}}
-                <p class="card-rating" data-test-info-type="productRating">
-                    <span class="rating--small">
-                        {{> components/products/ratings rating=rating}}
-                    </span>
-                    {{#if num_reviews}}
-                        <span class="number-review">({{num_reviews}})</span>
-                    {{/if}}
-                </p>
+            {{#if reviews.total}}
+                {{#if show_rating}}
+                    <p class="card-rating" data-test-info-type="productRating">
+                        <span class="rating--small">
+                            {{> components/products/ratings rating=rating}}
+                        </span>
+                        {{#if num_reviews}}
+                            <span class="number-review">({{num_reviews}})</span>
+                        {{/if}}
+                    </p>
+                {{/if}}
             {{/if}}
             {{#if show_compare}}
                 <label class="card-compare" for="compare-new-{{id}}">

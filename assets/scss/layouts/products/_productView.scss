@@ -403,7 +403,7 @@
           padding: 0 12px;
           border-radius: 50%;
           background: #fff;
-          border: 1px solid #cdd0d7;
+          border: 1px solid #222;
           @media (max-width: 767px) {
             margin-bottom: 15px;
           }
@@ -686,17 +686,16 @@
   .productView-options {
     padding: 0;
     border: none;
-    margin-bottom: 25px;
   }
 
   .productView-brand {
     font-size: 16px;
     line-height: 1;
     margin: 5px 0 15px;
-    font-weight: 400;
-    text-transform: capitalize;
+    font-weight: 600;
+    text-transform: uppercase;
     font-family: $fontFamily-sans;
-    color: #ef4838;
+    color: #000;
     text-decoration: underline;
     a {
       color: inherit;
@@ -763,7 +762,7 @@
 
   .productView-price {
     font-size: 0;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     position: relative;
 
     .price-section {
@@ -874,7 +873,10 @@
     margin-bottom: 15px;
 
     .form-field {
-      margin-bottom: 15px;
+      margin-bottom: 40px;
+      @media (max-width: 767px) {
+        margin-bottom: 15px;
+      }
     }
 
     .form-label--alternate {
@@ -887,7 +889,7 @@
 
       > small {
         top: -1.5px;
-        color: #8c8c8c;
+        color: #000;
         font-size: 11px;
         font-weight: 400;
         position: relative;
@@ -1671,8 +1673,7 @@
   }
 
   .write-review {
-    color: #ffffff;
-    background-color: stencilColor("color-textLink--hover");
+    text-decoration: underline;
   }
 
   .toggle-title .toggleLink {

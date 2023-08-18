@@ -96,15 +96,15 @@
                         {{#if product.num_reviews '>' 0}}
                             {{#if schema}}
                                 <meta itemprop="ratingValue" content="{{product.rating}}">
-                                <meta itemprop="ratingCount" content="{{product.num_reviews}}">
-                                <meta itemprop="reviewCount" content="{{product.num_reviews}}">
+                                <meta itemprop="ratingCount" content="">
+                                <meta itemprop="reviewCount" content="">
                             {{/if}}
+                            {{> components/products/ratings rating=product.rating}}
                         {{/if}}
-                        {{> components/products/ratings rating=product.rating}}
                         <span class="productView-reviewLink review-link">
                             {{#if product.num_reviews '>' 0}}
                                 <a href="{{product.url}}#product-reviews">
-                                    {{product.num_reviews}} reviews
+                                     reviews
                                 </a>
                             {{else}}
                                 No reviews yet

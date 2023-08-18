@@ -192,7 +192,9 @@
     display: inline-block;
     margin-left: spacing("half");
     vertical-align: middle;
-
+    & > span {
+        margin-left: -15px;
+    }
     + .productView-reviewLink {
         display: block;
         margin-left: auto;

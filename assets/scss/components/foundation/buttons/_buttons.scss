@@ -3,8 +3,7 @@
 // =============================================================================
 
 .button {
-    font-size: 16px;
-    line-height: 15px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0;
     margin-bottom: 0;
@@ -42,7 +41,7 @@
     }
     @include breakpoint("small") {
         font-size: 16px;
-        padding: 13px 15px 12px 15px;
+        padding: 12px 15px 12px 15px;
     }
     &:hover, &:focus, &:active {
         color: stencilColor("button--default-color");
@@ -99,15 +98,15 @@
 .button--secondary {
     min-width: 220px;
     color: stencilColor("button--secondary-color");
-    border: 1px solid #333;
-    background-color: #333;
+    border: 1px solid #222;
+    background-color: #222;
     svg {
         fill: stencilColor("button--secondary-color");
     }
     &:hover, &:active, &:focus {
         color: stencilColor("button--secondary-color");
-        border: 1px solid #ef4838;
-        background-color: #ef4838;
+        border: 1px solid #F47A2A;
+        background-color: #F47A2A;
         svg {
             fill: stencilColor("button--secondary-color");
         }
@@ -115,8 +114,8 @@
     @media (min-width: 1025px) {
         &:hover, &:focus, &:active {
             color: stencilColor("button--secondary-colorHover");
-            border: 1px solid #ef4838;
-            background-color: #ef4838;
+            border: 1px solid #F47A2A;
+            background-color: #F47A2A;
             svg {
                 fill: stencilColor("button--secondary-colorHover");
             }

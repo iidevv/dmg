@@ -142,7 +142,7 @@
   margin-right: 15px;
   .icon {
     margin-right: 5px;
-    fill: #fff;
+    fill: #222;
   }
   a {
     color: #fff;
@@ -865,7 +865,7 @@
   right: 5px;
 }
 .account-menu__form-forgot-link:hover {
-  background: #333;
+  background: #222;
   color: #fff;
 }
 .account-menu__form-forgot-link:active {
@@ -1180,7 +1180,7 @@
 }
 .departments--open .departments__button,
 .departments__button:hover {
-  background: #ef4838;
+  background: #F47A2A;
   color: #fff;
 }
 .departments--open .departments__button .departments__button-icon,
@@ -1334,7 +1334,7 @@
 }
 .dropcart__item-quantity:after,
 .dropcart__item-quantity:before {
-  background: #ef4838;
+  background: #F47A2A;
 }
 .dropcart__item-quantity:after {
   position: absolute;
@@ -1530,10 +1530,10 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
 }
 .header__topbar-start-bg:before {
-  background: #ef4838;
+  background: #F47A2A;
 }
 .header__topbar-end-bg:before {
-  background: #333;
+  background: #222;
 }
 .header__logo {
   padding-bottom: 14px;
@@ -1655,7 +1655,7 @@
   fill: #262626;
 }
 .indicator__title {
-  color: #999;
+  color: #000;
 }
 .indicator__value {
   font-weight: 500;
@@ -1674,7 +1674,7 @@
   }
 }
 .indicator__counter:before {
-  background-color: #ef4838;
+  background-color: #F47A2A;
 }
 .logo__slogan {
   padding-top: 11px;
@@ -1707,7 +1707,7 @@
   font-weight: 500;
 }
 .logo__part-primary {
-  fill: #ef4838;
+  fill: #F47A2A;
 }
 .logo__part-secondary {
   fill: #404040;
@@ -1787,6 +1787,17 @@
   background-color: #fff;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
+
+.header__store-contact span,
+.topbar__address span {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.header__topbar-start span {
+  color: #222;
+}
+
 @media (min-width: 1400px) {
   .main-menu__megamenu--size--xxl {
     width: 1350px;
@@ -2455,7 +2466,7 @@
   justify-content: flex-end;
 }
 .topbar--spaceship-start {
-  background: #ef4838;
+  background: #F47A2A;
 }
 .topbar--spaceship-start .topbar__item-text {
   color: #fff;
@@ -2501,7 +2512,7 @@
   color: #fff;
 }
 .topbar--spaceship-end {
-  background: #333;
+  background: #222;
 }
 .topbar--spaceship-end .topbar__item-text {
   color: #fff;
@@ -2723,7 +2734,7 @@ ul.socials-list--menu,
     left: 0;
     transform: translateX(-110%);
     z-index: 9999;
-    background: #333;
+    background: #222;
     width: 320px;
     transition: all 0.6s ease-in-out;
     box-shadow: 0 0 8px 1px rgba(#000, 0.3);
@@ -2842,7 +2853,7 @@ ul.socials-list--menu,
   }
   .mobile-search__input {
     padding: 12px 15px;
-    border: 3px solid #ef4838;
+    border: 3px solid #F47A2A;
     border-right: none;
     border-radius: 0;
     background: #fff;
@@ -2850,7 +2861,7 @@ ul.socials-list--menu,
     width: 100%;
   }
   .mobile-search__submit {
-    background: #ef4838;
+    background: #F47A2A;
     padding: 2px 20px 5px 20px;
     svg {
       fill: #fff;

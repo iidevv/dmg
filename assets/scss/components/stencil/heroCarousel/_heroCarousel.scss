@@ -239,7 +239,6 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 20px 15px 3px;
     white-space: normal;
     top: 50%;
     left: 50%;
@@ -249,7 +248,9 @@
     position: absolute;
     transform: translate3d(-50%, -50%, 0);
     background-color: transparent;
-
+    @media (max-width: 767px) {
+        padding: 0;
+    }
 }
 
 .heroCarousel-title {
@@ -317,16 +318,16 @@
     border: 1px solid stencilColor('carousel-button-border');
     background-color: stencilColor('carousel-button-bgcolor');
     box-shadow: 0 0 4px 1px rgba(0,0,0,0.2);
+    min-width: 175px;
     @media (min-width: 768px) {
         display: inline-block;
-        min-width: 175px;
         color: stencilColor('carousel-button-color');
         border: 1px solid stencilColor('carousel-button-border');
         background-color: stencilColor('carousel-button-bgcolor');
         &:hover, &:active, &:focus {
             color: stencilColor('carousel-button-colorHover');
             border: 1px solid stencilColor('carousel-button-borderHover');
-            background-color: stencilColor('carousel-button-bgcolorHover');
+            background-color: #fff;
         }
     }
 }

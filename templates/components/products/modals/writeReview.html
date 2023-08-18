@@ -60,7 +60,7 @@
                 {{> components/common/forms/multiline id="revtext" name="revtext" required="true" label=(lang 'products.reviews.form_write.comments') value=product.reviews.text}}
 
                 {{{product.reviews.recaptcha.markup}}}
-
+                <input type="hidden" name="recaptcha-accept">
                 <div class="form-field">
                     <input type="submit" class="button button--secondary"
                            value="{{lang 'products.reviews.form_write.submit_value' }}">

@@ -118,6 +118,7 @@ h6 {
 
 .page-heading {
     font-size: stencilNumber("fontSize-heading");
+    font-family: "Rajdhani", "Arial", "Helvetica", "sans-serif";
     line-height: 1.3;
     font-weight: 700;
     margin-top: 0;
@@ -221,7 +222,7 @@ h6 {
                 height: 2px;
                 display: block;
                 position: absolute;
-                background-color: #ef4838;
+                background-color: #F47A2A;
                 transform: translateX(-50%);
             }
         }

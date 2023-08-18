@@ -169,12 +169,12 @@
 }
 
 .card-brand {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 10px;
     line-height: 1;
     text-transform: capitalize;
-    color: #333333;
+    color: #222222;
 }
 
 .card-title {
@@ -244,7 +244,7 @@
         }
 
         &.price-section--withoutTax {
-            color: stencilColor('card-sale-price-color');
+            color: #DE2312;
 
             .price-now-label+.price--withoutTax {
                 color: stencilColor('card-price-color');
@@ -259,7 +259,7 @@
         }
 
         &.non-sale-price--withoutTax {
-            color: stencilColor('card-resale-price-color');
+            color: #666;
         }
 
         &.price-none {
@@ -416,8 +416,8 @@
 .card-figcaption-button {
     width: 100%;
     display: block;
-    color: stencilColor('card-figcaption-button-color');
-    border-color: stencilColor('card-figcaption-button-border');
+    color: #222;
+    border-color: #222;
     background-color: #fff;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.05);
 

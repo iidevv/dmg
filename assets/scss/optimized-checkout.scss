@@ -36,7 +36,7 @@ a {
 }
 
 .optimizedCheckout-header {
-    color: #333;
+    color: #222;
     text-align: left;
     min-height: 0;
     border-bottom: none;
@@ -135,14 +135,14 @@ dl {
 
 .optimizedCheckout-overlay {
     min-height: 0;
-    color: #333;
+    color: #222;
     font-weight: 700;
     border-radius: 0;
     background-color: #fafafa;
     border-color: #fafafa;
 
     p {
-        color: #333;
+        color: #222;
     }
 }
 
@@ -185,12 +185,12 @@ dl {
     font-family: "Rajdhani", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #ffffff;
-    border: 1px solid #333;
-    background-color: #333;
+    border: 1px solid #222;
+    background-color: #222;
 
     &.is-loading {
-        color: #333;
-        background-color: #333;
+        color: #222;
+        background-color: #222;
     }
 
     &:hover,
@@ -198,7 +198,7 @@ dl {
     &:active {
         outline: none;
         box-shadow: none;
-        border: #333;
+        border: #222;
     }
 
     @media (min-width: 415px) {
@@ -211,8 +211,8 @@ dl {
         &:hover,
         &:focus,
         &:active {
-            color: #333;
-            border: 1px solid #333;
+            color: #222;
+            border: 1px solid #222;
             background-color: transparent;
         }
     }
@@ -223,14 +223,14 @@ dl {
     &[disabled].is-active,
     &[disabled].active {
         opacity: 0.7;
-        border: 1px solid #333;
-        background-color: #333;
+        border: 1px solid #222;
+        background-color: #222;
     }
 
     &[disabled].is-loading {
         opacity: 0.7;
-        color: #333;
-        background-color: #333;
+        color: #222;
+        background-color: #222;
     }
 }
 
@@ -255,14 +255,14 @@ dl {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-buttonSecondary {
-    color: #333;
+    color: #222;
     font-size: 16px;
     padding: 12px 15px 10px 15px;
     border-radius: 0;
     line-height: 1;
     font-weight: 700;
     min-width: 120px;
-    border: 1px solid #333;
+    border: 1px solid #222;
     text-transform: uppercase;
     background-color: transparent;
     box-shadow: none;
@@ -272,8 +272,8 @@ dl {
     &:focus,
     &:active {
         box-shadow: none;
-        color: #333;
-        border: 1px solid #333;
+        color: #222;
+        border: 1px solid #222;
         background-color: transparent;
     }
 
@@ -283,14 +283,14 @@ dl {
     &[disabled].is-active,
     &[disabled].is-loading,
     &[disabled].active {
-        color: #333;
-        border: 1px solid #333;
+        color: #222;
+        border: 1px solid #222;
         background-color: transparent;
     }
 
     svg {
-        fill: #333;
-        stroke: #333;
+        fill: #222;
+        stroke: #222;
     }
 }
 
@@ -461,16 +461,16 @@ dl {
         color: #ffffff;
         font-weight: 700;
         font-family: "Rajdhani", Arial, Helvetica, sans-serif;
-        border: 1px solid #333;
-        background-color: #333;
+        border: 1px solid #222;
+        background-color: #222;
 
         @media (min-width: 1025px) {
 
             &:hover,
             &:focus,
             &:active {
-                color: #333;
-                border: 1px solid #333;
+                color: #222;
+                border: 1px solid #222;
                 background-color: #ffffff;
             }
         }
@@ -580,11 +580,11 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(#d14343, 0.6);
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-discountBanner {
-    color: #333;
+    color: #222;
     background-color: #e5e5e5;
 
     svg {
-        fill: #333;
+        fill: #222;
     }
 }
 
@@ -595,7 +595,7 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(#d14343, 0.6);
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-form-checklist {
-    color: #333;
+    color: #222;
     border-radius: 0;
     border: 1px solid #ebebeb;
     background-color: #f7f7f7;
@@ -650,7 +650,7 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(#d14343, 0.6);
 
 .optimizedCheckout-loadingToaster {
     color: #ffffff;
-    background-color: #333;
+    background-color: #222;
 }
 
 .cart-note {
@@ -785,7 +785,7 @@ a[data-test="forgot-password-link"] {
             margin-right: 15px;
             display: inline-block;
             vertical-align: middle;
-            background-color: #333;
+            background-color: #222;
             transform: scale(1);
 
             &:before {
@@ -910,7 +910,7 @@ a[data-test="forgot-password-link"] {
         position: relative;
         display: inline-block;
         text-transform: uppercase;
-        color: #ef4838;
+        color: #F47A2A;
         font-weight: 700;
         font-family: "Rajdhani", Arial, Helvetica, sans-serif;
 
@@ -940,8 +940,8 @@ a[data-test="forgot-password-link"] {
 #checkout-payment-continue {
     font-size: 16px;
     color: #ffffff;
-    border-color: #ef4838;
-    background-color: #ef4838;
+    border-color: #F47A2A;
+    background-color: #F47A2A;
     padding: 16px 30px 15px 30px;
 }
 

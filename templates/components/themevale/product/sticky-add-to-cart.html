@@ -27,8 +27,6 @@
                 <input type="hidden" name="action" value="add">
                 <input type="hidden" name="product_id" value="{{product.id}}"/>
                 <div class="form-field form-field--increments">
-                    <label class="form-label form-label--alternate"
-                           for="qty[]-2">{{lang 'products.quantity'}}</label>
                         <div class="form-increment" data-quantity-change>
                             <button class="button button--icon" data-action="dec">
                                 <span class="is-srOnly">{{lang 'products.quantity_decrease'}}</span>
@@ -37,7 +35,7 @@
                                 </i>
                             </button>
                             <input class="form-input form-input--incrementTotal"
-                                   id="qty[]-2"
+                                   id="qty-2"
                                    name="qty[]"
                                    type="tel"
                                    value="{{#if product.min_purchase_quantity}}{{product.min_purchase_quantity}}{{else}}1{{/if}}"
@@ -59,9 +57,9 @@
                         <input id="form-action-addToCart-2" data-wait-message="{{lang 'products.adding_to_cart'}}" class="button button--primary" type="submit" value="{{#if product.pre_order}}{{lang 'products.pre_order'}}{{else}}{{lang 'products.add_to_cart'}}{{/if}}" {{#if product.can_purchase}}{{else}}disabled {{/if}}>
 
                         {{#if product.options}}
-                            <a href="#" class="button button--primary choose_options_add">
+                            <button type="button" class="button button--primary choose_options_add">
                                 <span>Choose Option</span>
-                            </a>
+                            </button>
                         {{/if}}
                     </div>
                      {{{snippet 'product_addtocart'}}}

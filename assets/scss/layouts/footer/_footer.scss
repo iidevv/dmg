@@ -125,7 +125,7 @@
 
 .footer {
   color: $footer-textColor;
-  background-color: #333;
+  background-color: #222;
   .form,
   .form-field {
     margin-bottom: 0;
@@ -161,6 +161,10 @@
     .button {
       width: 100%;
       display: block;
+    }
+    .button.form-prefixPostfix-button--postfix {
+      color: #222;
+      line-height: 1.2;
     }
     .form-input {
       height: 42px;
@@ -676,18 +680,17 @@
   position: fixed;
   overflow: hidden;
   text-align: center;
-  border-radius: 50%;
   line-height: 1;
   transition: all 0.3s ease;
   color: stencilColor("back-to-top-color");
-  background-color: #ef4838;
-  border: #ef4838;
-  border: 1px solid #ef4838;
-  a {
+  background-color: #F47A2A;
+  border: #F47A2A;
+  border: 1px solid #F47A2A;
+  button {
     display: block;
   }
   .icon {
-    fill: #fff;
+    fill: #222;
     width: 30px;
     height: 30px;
     display: block;
@@ -699,9 +702,9 @@
   &:hover {
     color: stencilColor("back-to-top-colorHover");
     background-color: stencilColor("back-to-top-bgHover");
-    border: 1px solid #333;
+    border: 1px solid #222;
     .icon {
-      fill: #333;
+      fill: #222;
     }
   }
   @include breakpoint("large") {

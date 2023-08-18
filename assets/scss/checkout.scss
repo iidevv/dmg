@@ -27,7 +27,7 @@
 
 /*--------  1.0 Global style  -------*/
 body {
-  color: #333;
+  color: #222;
   font-size: 12px;
   line-height: 22px;
   font-weight: 400;
@@ -50,7 +50,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: #333;
+  color: #222;
   font-weight: 700;
   font-family: "Rajdhani", Arial, Helvetica, sans-serif;
 }
@@ -70,7 +70,7 @@ a {
 strong,
 b {
   font-weight: 700;
-  color: #333;
+  color: #222;
 }
 
 .header {
@@ -133,16 +133,16 @@ b {
   border-radius: 0;
   letter-spacing: 0;
   text-transform: uppercase;
-  border: 1px solid #333;
-  background-color: #333;
+  border: 1px solid #222;
+  background-color: #222;
   transition: all 0.3s ease;
   font-family: "Rajdhani", Arial, Helvetica, sans-serif;
   &:hover,
   &:focus,
   &:active {
     color: #ffffff;
-    border: 1px solid #333;
-    background-color: #333;
+    border: 1px solid #222;
+    background-color: #222;
   }
   @media (min-width: 415px) {
     font-size: 16px;
@@ -152,8 +152,8 @@ b {
     &:hover,
     &:focus,
     &:active {
-      color: #333;
-      border: 1px solid #333;
+      color: #222;
+      border: 1px solid #222;
       background-color: transparent;
     }
   }
@@ -171,7 +171,7 @@ textarea,
 input.Textbox,
 input[type="text"] {
   height: 40px;
-  color: #333;
+  color: #222;
   font-size: 12px;
   box-shadow: none;
   line-height: 20px;
@@ -238,7 +238,7 @@ select:-webkit-autofill {
       left: auto;
       width: 48px;
       height: 48px;
-      color: #333;
+      color: #222;
       font-size: 16px;
       font-weight: 700;
       border-radius: 0;
@@ -253,7 +253,7 @@ select:-webkit-autofill {
       border-radius: 3px 0 0 0;
     }
     span.ExpressCheckoutCompletedContent {
-      color: #333;
+      color: #222;
       display: inline-block;
     }
     a.ChangeLink {
@@ -274,7 +274,7 @@ select:-webkit-autofill {
     padding: 30px 48px 40px 48px;
     .PTB20 {
       strong {
-        color: #333;
+        color: #222;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
@@ -291,7 +291,7 @@ select:-webkit-autofill {
     margin-bottom: 15px;
     .ExpressCheckoutTitle {
       h3 {
-        color: #333;
+        color: #222;
       }
       span.ExpressCheckoutCompletedContent {
         color: #8c8c8c;
@@ -344,15 +344,15 @@ select:-webkit-autofill {
     min-width: 160px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-color: #ef4838;
-    background-color: #ef4838;
+    border-color: #F47A2A;
+    background-color: #F47A2A;
     color: #ffffff;
     &:hover,
     &:focus,
     &:active {
-      border-color: #ef4838;
+      border-color: #F47A2A;
       background-color: #ffffff;
-      color: #ef4838;
+      color: #F47A2A;
     }
   }
 }
@@ -366,7 +366,7 @@ select:-webkit-autofill {
   }
   dl {
     > dt {
-      color: #333;
+      color: #222;
       font-weight: 700;
       font-size: 12px;
     }
@@ -417,7 +417,7 @@ table.CartContents {
       font-weight: 700;
       line-height: 20px;
       padding: 8px 15px;
-      color: #333;
+      color: #222;
       font-size: 14px;
       font-family: "Rajdhani", Arial, Helvetica, sans-serif;
       text-transform: uppercase;
@@ -434,7 +434,7 @@ table.CartContents {
       border-color: #dcdcdc;
       > em {
         font-weight: 700;
-        color: #333;
+        color: #222;
         font-style: normal;
       }
       &:nth-last-of-type(1),
@@ -446,18 +446,18 @@ table.CartContents {
   tfoot {
     strong {
       font-weight: 700;
-      color: #333;
+      color: #222;
     }
     tr.CheckoutRedeemCoupon {
       label {
         font-weight: 700;
-        color: #333;
+        color: #222;
       }
     }
     tr.SubTotal > td {
       em {
         font-weight: 700;
-        color: #333;
+        color: #222;
         font-style: normal;
       }
       &:nth-last-of-type(1) {
@@ -490,13 +490,13 @@ table.CartContents {
 #bottom_payment_button {
   height: auto;
   color: #ffffff;
-  border: 1px solid #ef4838;
-  background-color: #ef4838;
+  border: 1px solid #F47A2A;
+  background-color: #F47A2A;
   &:hover,
   &:focus,
   &:active {
-    color: #ef4838;
-    border: 1px solid #ef4838;
+    color: #F47A2A;
+    border: 1px solid #F47A2A;
     background-color: #ffffff;
   }
 }
@@ -504,7 +504,7 @@ table.CartContents {
 /*--------  3.0 muiti address  ------*/
 
 h1.TitleHeading {
-  color: #333;
+  color: #222;
   line-height: 1;
   font-size: 20px;
   font-weight: 700;
@@ -528,14 +528,14 @@ h1.TitleHeading {
     border-right: none;
     background-color: #fff;
     h4 {
-      color: #333;
+      color: #222;
       border-bottom: none;
       text-transform: capitalize;
       font-size: 12px;
       padding: 8px 0;
       font-weight: 700;
       a {
-        color: #333;
+        color: #222;
       }
     }
     &.ActivePage {
@@ -543,7 +543,7 @@ h1.TitleHeading {
       h4 {
         padding: 8px 0;
         margin-bottom: 0;
-        color: #333;
+        color: #222;
         border-bottom: none;
       }
     }
@@ -572,7 +572,7 @@ h1.TitleHeading {
   .Moveable {
     .icon-add {
       border-radius: 0;
-      background-color: #333;
+      background-color: #222;
     }
     h2 {
       margin: 0;
@@ -606,7 +606,7 @@ h1.TitleHeading {
             margin: 0;
             font-size: 12px;
             font-weight: 700;
-            color: #333;
+            color: #222;
             border-color: #ececec;
           }
         }
@@ -649,7 +649,7 @@ h1.TitleHeading {
 .checkout-banner {
   text-align: left;
   a {
-    color: #333;
+    color: #222;
     font-size: 13px;
     font-weight: 700;
   }
@@ -659,18 +659,18 @@ h1.TitleHeading {
   .mtm .BoldUpper,
   .NotifyMessage .Bold {
     font-weight: 700;
-    color: #333;
+    color: #222;
     margin-right: 10px;
     text-transform: capitalize;
   }
   .NotifyMessage .Bold {
-    color: #333;
+    color: #222;
     font-weight: 700;
   }
   .mtm a {
     font-size: 16px;
     font-weight: 700;
-    color: #333;
+    color: #222;
     text-decoration: underline;
   }
 }
@@ -682,7 +682,7 @@ h1.TitleHeading {
     display: block;
     .sharingTab {
       border-radius: 0;
-      color: #333;
+      color: #222;
       font-weight: 700;
       position: relative;
       border-bottom: none;
@@ -705,7 +705,7 @@ h1.TitleHeading {
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
-    color: #333;
+    color: #222;
     display: block;
     margin-bottom: 10px;
     text-transform: capitalize;
@@ -789,7 +789,7 @@ h1.TitleHeading {
     padding-top: 5px;
   }
   .p-price {
-    color: #333;
+    color: #222;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -799,7 +799,7 @@ h1.TitleHeading {
       font-weight: 700;
     }
     .SalePrice {
-      color: #ef4838;
+      color: #F47A2A;
       font-size: 14px;
       font-weight: 700;
     }
@@ -808,8 +808,8 @@ h1.TitleHeading {
     line-height: 1;
     min-width: 160px;
     color: #ffffff;
-    border-color: #333;
-    background-color: #333;
+    border-color: #222;
+    background-color: #222;
   }
 }
 
@@ -944,7 +944,7 @@ h1.TitleHeading {
       }
       &.ActivePage {
         h4 {
-          border: 1px solid #333;
+          border: 1px solid #222;
         }
       }
     }

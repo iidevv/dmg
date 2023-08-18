@@ -1,4 +1,6 @@
 var webpack = require('webpack');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 /**
  * Watch options for the core watcher
@@ -49,6 +51,14 @@ function development() {
  */
 function production() {
     var prodConfig = require('./webpack.prod.js');
+
+    prodConfig.optimization = {
+        minimize: true,
+        minimizer: [
+            new CssMinimizerPlugin(),
+            new TerserPlugin(),
+        ],
+    };
 
     webpack(prodConfig).run((err, stats) => {
         if (err) {
