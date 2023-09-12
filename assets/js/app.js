@@ -306,7 +306,7 @@ $(function () {
         <div class="departments__item-menu">
             <div class="megamenu departments__megamenu departments__megamenu--size--lg">
                 <div class="departments__megamenu-inner">
-                    <div class="megamenu__image"><img loading="lazy" style="max-width: 360px;"
+                    <div class="megamenu__image"><img loading="lazy" style="max-width: 260px;"
                             src="https://cdn11.bigcommerce.com/s-4n3dh09e13/images/stencil/original/image-manager/motorcycle-gear.png"
                             alt="apparel"></div>
                     <div class="row">
@@ -729,7 +729,39 @@ $(function () {
                                         </li>
                                     </ul>
                                 </li>
-    
+                                <li
+                                    class="megamenu-links__item megamenu-links__item--has-submenu">
+                                    <a class="megamenu-links__item-link" href="/motorcycle-base-layers/">
+                                        Base Layers
+                                    </a>
+                                    <ul class="megamenu-links">
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/motorcycle-base-layers-tops/">
+                                                Tops
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/base-layers-pants/">
+                                                Pants
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/base-layers-socks/">
+                                                Socks
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/base-layers-balaclavas/">
+                                                Balaclavas
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/base-layers-closeouts/">
+                                                Closeouts
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li class="megamenu-links__item">
                                     <a class="megamenu-links__item-link"
                                         href="/motorcycle-jerseys/">
@@ -758,7 +790,49 @@ $(function () {
                         </div>
                         <div class="col-3">
                             <ul class="megamenu__links megamenu-links megamenu-links--root">
-    
+                            <li
+                                    class="megamenu-links__item megamenu-links__item--has-submenu">
+                                    <a class="megamenu-links__item-link" href="/snow-apparel/">
+                                        Snow
+                                    </a>
+                                    <ul class="megamenu-links">
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/snowmobile-jackets/">
+                                                Jackets
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/snowmobile-pants/">
+                                                Pants
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/snowmobile-suits/">
+                                                Suits
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/snowmobile-bibs/">
+                                                Bibs
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/snowmobile-boots/">
+                                                Boots
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/snowmobile-gloves/">
+                                                Gloves
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-links__item">
+                                            <a class="megamenu-links__item-link" href="/snowmobile-closeouts/">
+                                                Closeouts
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
     
                                 <li
                                     class="megamenu-links__item megamenu-links__item--has-submenu">
